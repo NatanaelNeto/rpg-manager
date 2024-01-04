@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Urbanist:ital,wght@0,900;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brutal_black: #000;
+  --brutal_blue: #3df;
+  --brutal_orange: #fb4;
+  --brutal_red: #f55;
+  --brutal_yellow: #ff0;
+  --brutal_green: #0f7;
+  --brutal_purple: #d7f;
+
+  --brutal_white: hsl(0, 100%, 100%);
+  --brutal_l_blue: hsl(190, 100%, 80%);
+  --brutal_l_orange: hsl(38, 100%, 83%);
+  --brutal_l_red: hsl(0, 100%, 87%);
+  --brutal_l_yellow: hsl(60, 100%, 70%);
+  --brutal_l_green: hsl(148, 100%, 70%);
+  --brutal_l_purple: hsl(285, 100%, 93%);
+}
+
+h1,
+h2,
+h3,
+span.brutal {
+  font-family: 'Urbanist', sans-serif
+}
+
+h1 {
+  font-size: 48px
+}
+
+h2 {
+  font-size: 36px
+}
+
+h3 {
+  font-size: 24px
+}
+
+p,
+span {
+  font-size: 18px
+}
+
+.text-little-size {
+  font-size: 14px
+}
+
+.main {
+  background-color: var(--brutal_l_orange);
+  width: 100%;
+  height: 100vh;
+}
