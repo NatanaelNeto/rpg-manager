@@ -13,5 +13,7 @@
 
 ## Conhecimentos Adicionais
 
- - Há cerca de 40 anos, na vila de Marimar, houve um evento que intrigou até os mais estudiosos da região. Um grupo de quatro desconhecidos chegaram procurando suas casas, alegando que elas estavam na vizinhança de uma casa de uma família que possuía uma bebê recém-nascida. A vila Marimar era uma vila elfica.
- - "Eu não sei o que aconteceu! Mas estavam aqui, nossas casas! Apenas ouvimos o grito da criança. Veio da casa dos Fahari"
+ - Há cerca de 40 anos, na vila de Marimar, houve um evento que intrigou até os mais estudiosos da região. Um grupo de quatro desconhecidos chegaram procurando suas casas, alegando que elas estavam na vizinhança dos Fahari. A vila Marimar era uma vila elfica.
+ - "Eu não sei o que aconteceu! Mas estavam aqui, nossas casas! Apenas ouvimos o grito da criança. Veio da casa dos Fahari, certeza!" Trecho do depoimento dos Vyturi, casal que alegou ter perdido suas casas que, visivelmente, nunca existiram.
+ - "Não há relatos no regristro de ninguém do casal Vyturi. Curiosamente, o lugar no registro que eles alegam estar, na verdade, está em branco, enquanto outros nomes aparecem normalmente, tanto antes quanto depois." (Relatório da guarda fiscal de Marimar, há 40 anos, após as alegações do casal Vyturi, da jovem Fibas e seu filho, Haynesy).
+ - "Encontramos esse compêndio sobre alguns artefatos mágicos. _Fahari Codex_, o nome dele. Algumas páginas estão arrancadas, mas dá para saber pelo menos o teor das páginas arrancadas pelo índice. Algo sobre _Nulidade_". (Relatório da guarda fiscal de Marimar, há 10 anos, após a destruição da vila).
