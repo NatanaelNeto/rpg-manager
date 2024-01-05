@@ -54,10 +54,24 @@
 
 ---
 
+## Armas Adicionais
+
+###
+
+---
+
 ## Artefatos
 
 ### Orbe da Obliteração Temporal
 
 - Este orbe só poderá ser usado em sua capacidade total por um feiticeiro ou um rúnico perto de sua morte (pode ser usado em estado de rendição). Em até 2d20 metros, apague da existência qualquer coisa que esteja por perto. Nenhum mortal se lembrará da existência do que foi apagado, nem agora, nem antes, nem depois.
+
+### Colar da Presciência
+
+- Enquanto estiver equipado, você saberá exatamente tudo que encontrará pelo caminho próximo.
+
+### Anel do Delírio
+
+- Ao segurar um objeto com a mão que está esse anel, você poderá fazê-lo desaparecer e reaparecer instantaneamente. Custa 10 de mana para cada uso do artefato. Há quem diga que orcs imensos foram empalados por lanças invisíveis.
 
 ---
