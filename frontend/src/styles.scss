@@ -5,10 +5,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  outline: none;
 }
 
 :root {
-  --brutal_black: #000;
+  --brutal_black: black;
+  --brutal_grey: #f3f3f3;
+  --brutal_white: white;
+
   --brutal_blue: #3df;
   --brutal_orange: #fb4;
   --brutal_red: #f55;
@@ -16,7 +22,6 @@
   --brutal_green: #0f7;
   --brutal_purple: #d7f;
 
-  --brutal_white: hsl(0, 100%, 100%);
   --brutal_l_blue: hsl(190, 100%, 80%);
   --brutal_l_orange: hsl(38, 100%, 83%);
   --brutal_l_red: hsl(0, 100%, 87%);
@@ -53,8 +58,22 @@ span {
   font-size: 14px
 }
 
-.main {
-  background-color: var(--brutal_l_orange);
-  width: 100%;
-  height: 100vh;
+.bordered {
+  border: 3px solid var(--brutal_black);
+}
+
+.shaded {
+  box-shadow: 4px 4px 0px var(--brutal_black);
+}
+
+.radius-1 {
+  border-radius: 4px;
+}
+
+.radius-2 {
+  border-radius: 8px;
+}
+
+.radius-3 {
+  border-radius: 16px;
 }
