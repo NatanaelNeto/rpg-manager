@@ -1,15 +1,15 @@
-# Delírios de Rahnesa
+# Delírios de Gleadwin
 
 - Autor: Natanael Neto
 - Dificuldade: 3
 
 ## Conhecimentos Fundamentais
 
-- Rahnesa é uma elfa feiticeira de alto nível, extremamente poderosa e que já devastou várias vilas de seu mundo.
+- Gleadwin é uma elfa feiticeira de alto nível, extremamente poderosa e que já devastou várias vilas de seu mundo.
 - Ela não possui motivação. Nem seu povo sabe explicar o que motivou tanta maldade nela. Ela é má somente pelo puro prazer de ser do mal.
-- Rahnesa já dizimou 14 vilas, sendo sua vila natal a segunda a ser destruída.
+- Gleadwin já dizimou 14 vilas, sendo sua vila natal a segunda a ser destruída.
 - Por conta de sua periculosidade, qualquer recompensa seria pífia se fosse apenas dinheiro. Aos que conseguirem a proeza de trazê-la morta, Loborn, rei dos elfos do norte, prometeu dar um artefato raro de seu cofre + 2000 moedas de ouro.
-- Rahnesa possui em torno de 45 anos.
+- Gleadwin possui em torno de 45 anos.
 
 ## Conhecimentos Adicionais
 
@@ -56,7 +56,32 @@
 
 ## Armas Adicionais
 
-###
+### Espada quebrada de Eigistryl
+
+- **Preço:** 10 moedas de prata
+- **Dano:** 2d6
+- **FN:** -
+- **Tipo:** Corte e Perfuração
+- **Distância:** Corpo a corpo
+- **Efeitos:** Caso o resultado do dano seja acerto crítico, você acertará partes vitais do oponente. Ele está automaticamente rendido (em estado de rendição). Caso contrário, o dano será metade de sua força (mínimo 2).
+
+### Adaga banhada de Eigistryl
+
+- **Preço:** 100 moedas de prata
+- **Dano:** 10
+- **FN:** -
+- **Tipo:** Corte e Perfuração
+- **Distância:** Corpo a corpo
+- **Efeitos:** Caso o resultado do dano seja acerto crítico, o dano causado será For/Agi (o maior entre) + 20. Você ganha uma ação extra.
+
+### Flecha Elétrica de Eigistryl
+
+- **Preço:** 20 moedas de prata
+- **Dano:** Agi + 2d6
+- **FN:** -
+- **Tipo:** Munição (requer um arco)
+- **Distância:** -
+- **Efeitos:** Caso o resultado do dano seja acerto crítico, um raio atingirá o alvo, causando mais 10 de dano e acertando quem estiver por perto.
 
 ---
 
@@ -75,3 +100,18 @@
 - Ao segurar um objeto com a mão que está esse anel, você poderá fazê-lo desaparecer e reaparecer instantaneamente. Custa 10 de mana para cada uso do artefato. Há quem diga que orcs imensos foram empalados por lanças invisíveis.
 
 ---
+
+## Magias Adicionais
+
+### Expurgar 1
+
+- **Custo:** 5 de Mana
+- **Dificuldade:** 8
+- **Descrição:** Empurre inimigos para longe. Essa magia é capaz de atordoar seus oponentes se lançada muito forte.
+
+### Expurgar 2
+
+- **Requisitos:** Expurgar 2
+- **Custo:** 5 de Mana
+- **Dificuldade:** 10
+- **Descrição:** Empurre inimigos para longe, atordoando-os por 1 turno. Essa magia causa 10 de dano caso seja lançada muito forte.
