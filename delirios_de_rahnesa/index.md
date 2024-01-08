@@ -40,6 +40,10 @@
 - Em estado de rendição, o personagem ainda está consciente, porém não poderá realizar quaisquer ações no seu turno além de falar, exceto em casos que a habilidade ou a ação tomada tire-o do estado de rendição.
 - Qualquer golpe levado em estado de rendição, por mais simples que seja, colocará o personagem por um fio.
 
+### Mercador Ambulante
+
+- Para cada mudança de cena, é jogado uma moeda. Caso caia cara, a equipe que está mudando de cena encontra um mercador ambulante que pode vender alguns itens. Há uma lista dos mercadores ambulantes e dos itens que eles possuem para vender.
+
 ---
 
 ## Habilidades adicionais
@@ -82,6 +86,15 @@
 - **Tipo:** Munição (requer um arco)
 - **Distância:** -
 - **Efeitos:** Caso o resultado do dano seja acerto crítico, um raio atingirá o alvo, causando mais 10 de dano e acertando quem estiver por perto.
+
+### Espada Gélida
+
+- **Preço:** 200 moedas de prata
+- **Dano:** 1d4-d6
+- **FN:** 4
+- **Tipo:** Corte e Perfuração
+- **Distância:** Corpo a Corpo e à Distância
+- **Efeitos:** Se você for versado em magias, gaste 10 de mana (dif 18 - For). Você corta o ar com sua espada, congelando seus inimigos por 1 turno e dando 10 de dano em cada um deles.
 
 ---
 
