@@ -5,6 +5,10 @@
   grid-template-columns: 300px 1fr;
 
   &-content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+
     &-main-info {
       padding: 10px;
       border-bottom: 3px solid var(--brutal_black);
@@ -59,18 +63,137 @@
           font-size: 24px;
           font-family: 'Urbanist', sans-serif;
           font-weight: bolder;
+        }
+      }
+    }
 
-          &.green {
-            background-color: var(--brutal_green);
+    &-details {
+      overflow: hidden;
+
+      .column {
+        border-right: 3px solid var(--brutal_black);
+        display: grid;
+        grid-template-rows: auto 1fr;
+        overflow-y: hidden;
+
+        /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+        * {
+          scrollbar-width: none;
+          scrollbar-color: #000000 #ffffff;
+        }
+
+        /* Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        *::-webkit-scrollbar-track {
+          background: #ffffff;
+        }
+
+        *::-webkit-scrollbar-thumb {
+          background-color: #000000;
+          border-radius: 0px;
+          border: 0px solid #ffffff;
+        }
+
+        h3 {
+          padding: 10px;
+          border-bottom: 3px solid var(--brutal_black);
+        }
+
+        .content {
+          padding: 10px;
+          overflow-y: auto;
+
+          ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--brutal_black);
+
+            p {
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+
+      .counters {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        .counter {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: space-around;
+
+          .display {
+            width: 75px;
+            height: 75px;
+            border-radius: 75px;
+            font-size: 36px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-family: 'Urbanist', sans-serif;
           }
 
-          &.yellow {
-            background-color: var(--brutal_yellow);
-          }
+          .display-tools {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
 
-          &.red {
-            background-color: var(--brutal_red);
+            button {
+              font-size: 14px;
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              padding: 10px;
+              display: flex;
+              flex-flow: column;
+              align-items: center;
+              text-align: center;
+              justify-content: center;
+              font-family: 'Urbanist', sans-serif;
+              margin: 2px;
+            }
           }
+        }
+      }
+    }
+
+    &-tools {
+      background-color: var(--brutal_green);
+      padding: 10px;
+      border-top: 3px solid var(--brutal_black);
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.add {
+          background-color: var(--brutal_blue);
+          color: var(--brutal_l_yellow);
+        }
+
+        &.edit {
+          background-color: var(--brutal_yellow);
+          color: var(--brutal_black);
+        }
+
+        &.remove {
+          background-color: var(--brutal_red);
+          color: var(--brutal_l_orange);
         }
       }
     }

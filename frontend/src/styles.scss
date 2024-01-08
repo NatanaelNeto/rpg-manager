@@ -35,6 +35,7 @@
 h1,
 h2,
 h3,
+h4,
 span.brutal {
   font-family: 'Urbanist', sans-serif
 }
@@ -51,9 +52,13 @@ h3 {
   font-size: 24px
 }
 
+h4 {
+  font-size: 20px;
+}
+
 p,
 span {
-  font-size: 18px
+  font-size: 20px
 }
 
 .text-little-size {
@@ -132,4 +137,41 @@ span {
 
 .grid-12 {
   grid-column-start: span 12;
+}
+
+.btn {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Urbanist', sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--brutal_black) !important;
+    color: var(--brutal_white) !important;
+  }
+}
+
+.green {
+  background-color: var(--brutal_green);
+}
+
+.yellow {
+  background-color: var(--brutal_yellow);
+}
+
+.red {
+  background-color: var(--brutal_red);
+}
+
+.blue {
+  background-color: var(--brutal_blue);
+}
+
+.orange {
+  background-color: var(--brutal_orange);
+}
+
+.purple {
+  background-color: var(--brutal_purple);
 }
