@@ -8,6 +8,8 @@
   border: none;
   border-radius: 0;
   outline: none;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 18px;
 }
 
 :root {
@@ -22,12 +24,12 @@
   --brutal_green: #0f7;
   --brutal_purple: #d7f;
 
-  --brutal_l_blue: hsl(190, 100%, 80%);
-  --brutal_l_orange: hsl(38, 100%, 83%);
-  --brutal_l_red: hsl(0, 100%, 87%);
-  --brutal_l_yellow: hsl(60, 100%, 70%);
-  --brutal_l_green: hsl(148, 100%, 70%);
-  --brutal_l_purple: hsl(285, 100%, 93%);
+  --brutal_l_blue: hsl(190, 100%, 85%);
+  --brutal_l_orange: hsl(38, 100%, 88%);
+  --brutal_l_red: hsl(0, 100%, 92%);
+  --brutal_l_yellow: hsl(60, 100%, 75%);
+  --brutal_l_green: hsl(148, 100%, 75%);
+  --brutal_l_purple: hsl(285, 100%, 98%);
 }
 
 h1,
@@ -76,4 +78,58 @@ span {
 
 .radius-3 {
   border-radius: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+.grid-1 {
+  grid-column-start: span 1;
+}
+
+.grid-2 {
+  grid-column-start: span 2;
+}
+
+.grid-3 {
+  grid-column-start: span 3;
+}
+
+.grid-4 {
+  grid-column-start: span 4;
+}
+
+.grid-5 {
+  grid-column-start: span 5;
+}
+
+.grid-6 {
+  grid-column-start: span 6;
+}
+
+.grid-7 {
+  grid-column-start: span 7;
+}
+
+.grid-8 {
+  grid-column-start: span 8;
+}
+
+.grid-9 {
+  grid-column-start: span 9;
+}
+
+.grid-10 {
+  grid-column-start: span 10;
+}
+
+.grid-11 {
+  grid-column-start: span 11;
+}
+
+.grid-12 {
+  grid-column-start: span 12;
 }
