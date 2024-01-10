@@ -1,3 +1,6 @@
+import { AbilityModel } from "./ability-model";
+import { EquipmentModel } from "./equipment-model";
+
 export class CharacterModel {
   // Atributos Pessoais
   name: string;
@@ -15,8 +18,8 @@ export class CharacterModel {
   intelligence: number;
   will: number;
 
-  equipments: [];
-  abilities: [];
+  equipments: EquipmentModel[];
+  abilities: AbilityModel[];
 
   block: {
     armorBonus: 0;
