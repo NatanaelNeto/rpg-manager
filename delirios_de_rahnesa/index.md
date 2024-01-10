@@ -5,18 +5,22 @@
 
 ## Conhecimentos Fundamentais
 
+- A história se passa na região leste do reino de Fragatiel. É um reino majoritariamente humano, mas que convive muito bem com seres da natureza, como os elfos, halflings, etc.
 - Gleadwin é uma elfa feiticeira de alto nível, extremamente poderosa e que já devastou várias vilas de seu mundo.
 - Ela não possui motivação. Nem seu povo sabe explicar o que motivou tanta maldade nela. Ela é má somente pelo puro prazer de ser do mal.
 - Gleadwin já dizimou 14 vilas, sendo sua vila natal a segunda a ser destruída.
-- Por conta de sua periculosidade, qualquer recompensa seria pífia se fosse apenas dinheiro. Aos que conseguirem a proeza de trazê-la morta, Loborn, rei dos elfos do norte, prometeu dar um artefato raro de seu cofre + 2000 moedas de ouro.
+- Por conta de sua periculosidade, qualquer recompensa seria pífia se fosse apenas dinheiro. Aos que conseguirem a proeza de trazê-la morta, Fregt III, rei de Fragatiel, prometeu dar um artefato raro de seu cofre + 2000 moedas de ouro.
 - Gleadwin possui em torno de 45 anos.
 
 ## Conhecimentos Adicionais
 
+- Há alguns anos, raças consideradas agressivas foram "banidas" para além das montanhas do norte. Por conta de suas características agressivas, as tribos de orcs, nagas, dragos e algumas vilas élficas foram recolocadas longe do reino de Fragatiel.
 - Há cerca de 40 anos, na vila de Marimar, houve um evento que intrigou até os mais estudiosos da região. Um grupo de quatro desconhecidos chegaram procurando suas casas, alegando que elas estavam na vizinhança dos Fahari. A vila Marimar era uma vila elfica.
 - "Eu não sei o que aconteceu! Mas estavam aqui, nossas casas! Apenas ouvimos o grito da criança. Veio da casa dos Fahari, certeza!" Trecho do depoimento dos Vyturi, casal que alegou ter perdido suas casas que, visivelmente, nunca existiram.
 - "Não há relatos no regristro de ninguém do casal Vyturi. Curiosamente, o lugar no registro que eles alegam estar, na verdade, está em branco, enquanto outros nomes aparecem normalmente, tanto antes quanto depois." (Relatório da guarda fiscal de Marimar, há 40 anos, após as alegações do casal Vyturi, da jovem Fibas e seu filho, Haynesy).
 - "Encontramos esse compêndio sobre alguns artefatos mágicos. _Fahari Codex_, o nome dele. Algumas páginas estão arrancadas, mas dá para saber pelo menos o teor das páginas arrancadas pelo índice. Algo sobre _Nulidade_". (Relatório da guarda fiscal de Marimar, há 10 anos, após a destruição da vila).
+- É de nosso conhecimento, após os vários ataques nas vilas da região central, que os orcs estão se infiltrando em nosso reino. Eles começaram com pequenos contratempos e confusões, nada que parecesse importante no início. Mas agora, juntamente com algumas raças marginalizadas, as proporções aumentaram. Soube de um roubo de carga a caminho da Cidadela de Topur. Foi muito rápido, certeza que alguns nagas estavam com eles. Tudo deve fazer parte de um plano maior que temos que investigar. (Diário possívelmente encontrado no posto avançado. Poderá ser recebido após derrotar Glaedwin e conversar com Ametisto).
+- Eles estão com ela. Vila Amirye corre perigo! (Papel encontrado na mão de um soldado do posto avançado).
 
 ---
 
@@ -43,6 +47,10 @@
 ### Mercador Ambulante
 
 - Para cada mudança de cena, é jogado uma moeda. Caso caia cara, a equipe que está mudando de cena encontra um mercador ambulante que pode vender alguns itens. Há uma lista dos mercadores ambulantes e dos itens que eles possuem para vender.
+
+### Estado: Sangrando
+
+- O personagem recebe +2 de dano. Os testes de defesa do personagem recebem -1 de dificuldade. Algum aliado poderá gastar 1 turno para estancar o sangramento.
 
 ---
 
@@ -96,6 +104,15 @@
 - **Distância:** Corpo a Corpo e à Distância
 - **Efeitos:** Se você for versado em magias, gaste 10 de mana (dif 18 - For). Você corta o ar com sua espada, congelando seus inimigos por 1 turno e dando 10 de dano em cada um deles.
 
+### Maça Espinhosa
+
+- **Preço:** 150 moedas de prata
+- **Dano:** For + 1d6
+- **FN:** 4
+- **Tipo:** Contusão
+- **Distância:** Corpo a Corpo e à Distância
+- **Efeitos:** Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6).
+
 ---
 
 ## Artefatos
@@ -125,6 +142,6 @@
 ### Expurgar 2
 
 - **Requisitos:** Expurgar 2
-- **Custo:** 5 de Mana
+- **Custo:** 10 de Mana
 - **Dificuldade:** 10
 - **Descrição:** Empurre inimigos para longe, atordoando-os por 1 turno. Essa magia causa 10 de dano caso seja lançada muito forte.
