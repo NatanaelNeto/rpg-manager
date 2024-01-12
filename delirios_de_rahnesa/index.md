@@ -61,12 +61,46 @@
 #### Melodia Protetiva das Terras Áridas - Pico Feet
 
 - **Custo:** 30 de Mana
-- **Dificuldade:** 0
+- **Dificuldade:** 8
 - **Descrição:** Você toca um acorde poderoso e estridente, fazendo com que 50% do dano causado a 1d6 personagens seja ignorado.
+
+### Espadachim/Guerreiro
+
+#### Guarda Defletora
+
+- **Custo:** 10 de Mana
+- **Dificuldade:** 10
+- **Requisito:** Portar, pelo menos, uma espada
+- **Descrição:** Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano.
+
+#### Guarda Crescente do Senescal
+
+- **Custo:** 20 de Mana
+- **Dificuldade:** 14
+- **Requisito:** Portar, pelo menos, uma espada, Guarda Defletora, nível 5
+- **Descrição:** Você gira rapidamente na sua base com sua espada, usando ela para defletir projéteis ou golpes durante 1 turno. Inimigos ao redor não podem lhe atacar. Inimigos ao redor no momento que você ativar essa habilidade são jogados para trás, recebendo 5 de dano e ficam caídos. Acertos críticos devolvem o dano ao atacante.
+
+### Feiticeiro
+
+#### Explosão Primordial
+
+- **Custo:** 30 de Mana
+- **Dificuldade:** 12
+- **Requisito:** Portar o Cajado de Gareiv
+- **Descrição:** Causa 20 de dano em um oponente (+10 em caso de acerto crítico). Caso esse dano zere a vida do oponente, ele explode, morrendo imediatamente e aumentando o dano dessa habilidade em 10. (Válido apenas para esse dia)
 
 ---
 
 ## Armas Adicionais
+
+### Cajado de Gareiv
+
+- **Preço:** 2000 moedas de prata
+- **Dano:** For+5
+- **FN:** -
+- **Tipo:** Contusão, Canalizador
+- **Distância:** -
+- **Efeitos:** Você precisa ter Int 6 e Von 6 para usar este cajado. Suas magias e conjurações causam +5 de dano. Seus efeitos duram mais tempo. Você poderá conjurar a habilidade **Explosão Primordial**.
 
 ### Espada quebrada de Eigistryl
 
@@ -79,7 +113,7 @@
 
 ### Adaga banhada de Eigistryl
 
-- **Preço:** 100 moedas de prata
+- **Preço:** 200 moedas de prata
 - **Dano:** 10
 - **FN:** -
 - **Tipo:** Corte e Perfuração
@@ -97,7 +131,7 @@
 
 ### Espada Gélida
 
-- **Preço:** 200 moedas de prata
+- **Preço:** 1500 moedas de prata
 - **Dano:** 1d4-d6
 - **FN:** 4
 - **Tipo:** Corte e Perfuração
@@ -112,6 +146,15 @@
 - **Tipo:** Contusão
 - **Distância:** Corpo a Corpo e à Distância
 - **Efeitos:** Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6).
+
+### Bomba Gosmenta
+
+- **Preço:** 100 moedas de prata
+- **Dano:** -
+- **FN:** -
+- **Tipo:** Efeito
+- **Distância:** 1d20
+- **Efeitos:** Você arremesa uma bomba gosmenta que prende quem atingir no chão, impedindo qualquer ação por 2 turnos.
 
 ---
 
@@ -145,3 +188,15 @@
 - **Custo:** 10 de Mana
 - **Dificuldade:** 10
 - **Descrição:** Empurre inimigos para longe, atordoando-os por 1 turno. Essa magia causa 10 de dano caso seja lançada muito forte.
+
+---
+
+## Monstros
+
+### Praga
+
+- **Atributos:** For 4, Agi 6
+- **Pontos:** PV 40, PM 40, Def 11
+- **Habilidades:** Absorver, Regeneração, Visão Noturna, Vulnerabilidade a Fogo, Imunidade a Contusão, Corpo Amórfico, Mente Vazia, Divisão celular
+- **Ataques:** Tentáculo (Corporal; Dano: 8/Contusão), Bola de Limo (Distância; Dano: 8/Contusão)
+- **Observações:** Versão gigante recebe +3 em For, +3 nos danos e +40 PV. Versão mini recebe -1 em For, -3 nos danos e -20 PV
