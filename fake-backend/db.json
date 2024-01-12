@@ -1,5 +1,64 @@
 {
   "adventures": [],
-  "characters": [],
-  "enemies": []
+  "characters": [
+    {
+      "id": 0,
+      "name": "Incrível Solveig",
+      "sex": "F",
+      "race": "Centauro",
+      "class": "Ranger",
+      "level": 5,
+
+      "life": 80,
+      "mana": 60,
+
+      "strength": 7,
+      "agility": 10,
+      "intelligence": 3,
+      "will": 3,
+
+      "equipments": [],
+      "abilities": [],
+
+      "block": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      },
+
+      "dodge": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      }
+    }
+  ],
+  "enemies": [
+    {
+      "id": 0,
+      "name": "Kruvakk",
+      "race": "Orc",
+      "class": "Guerreiro",
+      "level": 3,
+
+      "life": 50,
+      "mana": 30,
+
+      "strength": 3,
+      "agility": 5,
+      "intelligence": 3,
+      "will": 3,
+
+      "equipments": [],
+      "abilities": [],
+
+      "block": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      },
+
+      "dodge": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      }
+    }
+  ]
 }
