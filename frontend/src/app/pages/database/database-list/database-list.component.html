@@ -3,7 +3,7 @@
     <h3>Personagens</h3>
     <div class="list-container">
       <div *ngFor="let c of chars" class="list-item">
-        <h4>{{c.name}}, {{c.sex == "F" ? 'A' : 'O'}} {{c.race}} {{c.class}}</h4>
+        <h4>{{c.name}}, {{c.sex | sex:c.unified}} {{c.race}} {{c.class}}</h4>
       </div>
     </div>
   </div>

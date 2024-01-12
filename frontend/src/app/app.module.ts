@@ -11,6 +11,7 @@ import { DatabaseComponent } from './pages/database/database.component';
 import { DatabaseMainComponent } from './pages/database/database-main/database-main.component';
 import { DatabaseListComponent } from './pages/database/database-list/database-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SexPipe } from './pipes/sex.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     SessionSidebarComponent,
     DatabaseComponent,
     DatabaseMainComponent,
-    DatabaseListComponent
+    DatabaseListComponent,
+    SexPipe
   ],
   imports: [
     BrowserModule,

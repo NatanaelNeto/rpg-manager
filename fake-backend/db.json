@@ -5,6 +5,7 @@
       "id": 0,
       "name": "Incrível Solveig",
       "sex": "F",
+      "unified": true,
       "race": "Centauro",
       "class": "Ranger",
       "level": 5,
@@ -35,6 +36,8 @@
     {
       "id": 0,
       "name": "Kruvakk",
+      "sex": "M",
+      "unified": false,
       "race": "Orc",
       "class": "Guerreiro",
       "level": 3,

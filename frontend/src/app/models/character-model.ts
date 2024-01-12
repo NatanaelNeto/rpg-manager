@@ -33,4 +33,5 @@ export class CharacterModel {
   }
 
   location?: string;
+  unified?: boolean = false;
 }
