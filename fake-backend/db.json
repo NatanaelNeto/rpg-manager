@@ -11,15 +11,43 @@
       "level": 5,
 
       "life": 80,
+      "currLife": 80,
       "mana": 60,
+      "currMana": 60,
 
       "strength": 7,
       "agility": 10,
       "intelligence": 3,
       "will": 3,
 
-      "equipments": [],
-      "abilities": [],
+      "equipments": [
+        {
+          "name": "Arco Composto",
+          "type": "Arma a distância",
+          "description": "Um arco simples",
+          "price": "200 moedas de prata",
+          "damage": "-",
+          "fn": 2,
+          "effects": "Permite atirar flechas"
+        },
+        {
+          "name": "Maça Espinhosa",
+          "type": "Arma corpo a corpo e a distância",
+          "description": "Uma maça com espinhos em sua ponta",
+          "price": "150 moedas de prata",
+          "damage": "For + 1d6",
+          "fn": 4,
+          "effects": "Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6)"
+        }
+      ],
+      "abilities": [{
+        "name": "Guarda Defletora",
+        "type": "Reação",
+        "cost": "10 de mana",
+        "requisites": "Portar, pelo menos, uma espada",
+        "diff": 10,
+        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
+      }],
 
       "block": {
         "armorBonus": 0,
@@ -29,7 +57,8 @@
       "dodge": {
         "armorBonus": 0,
         "blockBonus": 0
-      }
+      },
+      "openMenu": false
     }
   ],
   "enemies": [
@@ -43,15 +72,43 @@
       "level": 3,
 
       "life": 50,
+      "currLife": 50,
       "mana": 30,
+      "currMana": 30,
 
       "strength": 3,
       "agility": 5,
       "intelligence": 3,
       "will": 3,
 
-      "equipments": [],
-      "abilities": [],
+      "equipments": [
+        {
+          "name": "Arco Composto",
+          "type": "Arma a distância",
+          "description": "Um arco simples",
+          "price": "200 moedas de prata",
+          "damage": "-",
+          "fn": 2,
+          "effects": "Permite atirar flechas"
+        },
+        {
+          "name": "Maça Espinhosa",
+          "type": "Arma corpo a corpo e a distância",
+          "description": "Uma maça com espinhos em sua ponta",
+          "price": "150 moedas de prata",
+          "damage": "For + 1d6",
+          "fn": 4,
+          "effects": "Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6)"
+        }
+      ],
+      "abilities": [{
+        "name": "Guarda Defletora",
+        "type": "Reação",
+        "cost": "10 de mana",
+        "requisites": "Portar, pelo menos, uma espada",
+        "diff": 10,
+        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
+      }],
 
       "block": {
         "armorBonus": 0,
@@ -61,7 +118,8 @@
       "dodge": {
         "armorBonus": 0,
         "blockBonus": 0
-      }
+      },
+      "openMenu": false
     }
   ]
 }

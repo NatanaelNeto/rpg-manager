@@ -2,5 +2,8 @@ export class EquipmentModel {
   name: string;
   type: string;
   description: string;
-  details: string;
+  price: string;
+  damage: string;
+  fn: number;
+  effects: string;
 }

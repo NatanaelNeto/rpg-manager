@@ -11,10 +11,9 @@ export class DatabaseListComponent implements OnInit {
   chars: CharacterModel[] = [];
   enemies: CharacterModel[] = []
 
-  constructor (private db: DatabaseService) {
-    this.db.getAllCharacters().subscribe(c => this.chars = c);
+  constructor(private db: DatabaseService) {
+    this.db.getAllCharacters().subscribe(c => { this.chars = c; console.log(c) });
     this.db.getAllEnemies().subscribe(e => this.enemies = e);
-
   }
   ngOnInit(): void {
   }

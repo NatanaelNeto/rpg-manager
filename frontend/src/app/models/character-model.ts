@@ -11,7 +11,9 @@ export class CharacterModel {
 
   // Contadores
   life: number;
+  currLife: number;
   mana: number;
+  currMana: number;
 
   // Atributos
   strength: number;
@@ -34,4 +36,5 @@ export class CharacterModel {
 
   location?: string;
   unified?: boolean = false;
+  openMenu: boolean;
 }

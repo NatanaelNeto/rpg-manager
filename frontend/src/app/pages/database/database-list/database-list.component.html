@@ -1,17 +1,55 @@
 <section class="database-list grid">
   <div class="grid-6 list">
-    <h3>Personagens</h3>
+    <h2>Personagens</h2>
     <div class="list-container">
-      <div *ngFor="let c of chars" class="list-item">
-        <h4>{{c.name}}, {{c.sex | sex:c.unified}} {{c.race}} {{c.class}}</h4>
+      <div class="list-scroll">
+
+        <div *ngFor="let c of chars" class="list-item">
+          <div class="list-item-header">
+            <h3>{{c.name}}, {{c.sex | sex:c.unified}} {{c.race}} {{c.class}}</h3>
+            <mat-icon class="list-item-card-drop {{c.openMenu ? '' : 'close'}}"
+              (click)="c.openMenu = !c.openMenu">arrow_drop_up</mat-icon>
+          </div>
+          <div *ngIf="c.openMenu" class="list-item-content">
+            <div class="list-item-content-group">
+              <h4>Atributos</h4>
+              <p><span class="brutal">Vida máxima: </span>{{c.life}} | <span class="brutal">Vida atual:
+                </span>{{c.currLife}}</p>
+              <p><span class="brutal">Mana máxima: </span>{{c.mana}} | <span class="brutal">Mana atual:
+                </span>{{c.currMana}}</p>
+              <p><span class="brutal">Nível: </span>{{c.level}}</p>
+              <p><span class="brutal">Força: </span>{{c.strength}} | <span class="brutal">Agilidade:
+                </span>{{c.agility}} | <span class="brutal">Inteligência: </span>{{c.intelligence}} | <span
+                  class="brutal">Vontade: </span>{{c.will}}</p>
+            </div>
+            <div class="list-item-content-group">
+              <h4>Habilidades</h4>
+              <div class="equipment" *ngFor="let item of c.abilities">
+                <p><span class="brutal">{{item.name}} (item.type)</span></p>
+                <p>{{item.description}}</p>
+                <p><span class="brutal">Custo: </span>{{item.cost}}</p>
+                <p><span class="brutal">Dificuldade: </span>{{item.diff}}</p>
+              </div>
+            </div>
+            <div class="list-item-content-group">
+              <h4>Equipamentos</h4>
+              <div class="equipment" *ngFor="let item of c.equipments">
+                <p><span class="brutal">{{item.name}}</span></p>
+                <p>{{item.description}}</p>
+                <p><span class="brutal">Preço: </span>{{item.price}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
   <div class="grid-6 list">
-    <h3>Inimigos</h3>
+    <h2>Inimigos</h2>
     <div class="list-container">
       <div *ngFor="let e of enemies" class="list-item">
-        <h4>{{e.name}}, {{e.sex == "F" ? 'Uma' : 'Um'}} {{e.race}} {{e.class}}</h4>
+        <h3>{{e.name}}, {{e.sex == "F" ? 'Uma' : 'Um'}} {{e.race}} {{e.class}}</h3>
       </div>
     </div>
   </div>
