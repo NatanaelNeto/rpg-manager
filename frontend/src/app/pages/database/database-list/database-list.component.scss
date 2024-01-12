@@ -1,0 +1,18 @@
+.database-list {
+  height: 100%;
+
+  .list {
+
+    h3 {
+      width: 100%;
+      padding: 10px;
+      border-bottom: 3px solid var(--brutal_black);
+    }
+    &:first-child {
+      border-right: 3px solid var(--brutal_black);
+    }
+    &-container {
+      padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<section class="database-list grid">
+  <div class="grid-6 list">
+    <h3>Personagens</h3>
+    <div class="list-container">
+      <div *ngFor="let c of chars" class="list-item">
+        <h4>{{c.name}}, {{c.sex == "F" ? 'A' : 'O'}} {{c.race}} {{c.class}}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="grid-6 list">
+    <h3>Inimigos</h3>
+    <div class="list-container">
+      <div *ngFor="let e of enemies" class="list-item">
+        <h4>{{e.name}}, {{e.sex == "F" ? 'Uma' : 'Um'}} {{e.race}} {{e.class}}</h4>
+      </div>
+    </div>
+  </div>
+</section>

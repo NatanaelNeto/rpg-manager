@@ -4,6 +4,7 @@ import { EquipmentModel } from "./equipment-model";
 export class CharacterModel {
   // Atributos Pessoais
   name: string;
+  sex: 'F' | 'M';
   race: string;
   class: string;
   level: number;
@@ -29,14 +30,6 @@ export class CharacterModel {
   dodge: {
     armorBonus: 0;
     blockBonus: 0;
-  }
-
-  getBlock(): number {
-    return 5 + this.strength + this.block.armorBonus + this.block.blockBonus;
-  }
-
-  getDodge(): number {
-    return 5 + this.agility + this.dodge.armorBonus + this.dodge.blockBonus;
   }
 
   location?: string;
