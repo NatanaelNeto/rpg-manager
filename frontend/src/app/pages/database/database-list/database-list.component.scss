@@ -60,13 +60,14 @@
         &-card-drop {
           position: absolute;
           top: 0;
-          right: 24px;
+          right: 14px;
           font-size: 48px;
           width: 48px;
           height: 48px;
 
           &.close {
             transform: rotate(180deg);
+            right: 24px;
           }
         }
 
