@@ -1,0 +1,89 @@
+<section class="database-add">
+  <div class="form grid">
+    <div class="form-container grid-12">
+      <h3>Dados Pessoais</h3>
+      <div class="grid">
+        <div class="form-group grid-6">
+          <input type="text" placeholder="Nome" [(ngModel)]="character.name">
+        </div>
+        <div class="form-group grid-3">
+          <select aria-placeholder="sexo" [(ngModel)]="character.sex">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
+        </div>
+        <div class="form-group grid-3">
+          <input type="number" min="0" placeholder="Nível" [(ngModel)]="character.level">
+        </div>
+        <div class="form-group grid-6">
+          <input type="text" placeholder="Raça" [(ngModel)]="character.race">
+        </div>
+        <div class="form-group grid-6">
+          <input type="text" placeholder="Classe" [(ngModel)]="character.class">
+        </div>
+      </div>
+    </div>
+    <div class="form-container grid-12">
+      <h3>Atributos</h3>
+      <div class="grid">
+        <div class="form-group grid-2">
+          <span class="brutal">Vida: </span>
+          <input type="number" min="0" [(ngModel)]="character.life">
+        </div>
+        <div class="form-group grid-2">
+          <span class="brutal">Mana: </span>
+          <input type="number" min="0" [(ngModel)]="character.mana">
+        </div>
+        <div class="form-group grid-2">
+          <span class="brutal">For: </span>
+          <input type="number" min="0" [(ngModel)]="character.strength">
+        </div>
+        <div class="form-group grid-2">
+          <span class="brutal">Agi: </span>
+          <input type="number" min="0" [(ngModel)]="character.agility">
+        </div>
+        <div class="form-group grid-2">
+          <span class="brutal">Int: </span>
+          <input type="number" min="0" [(ngModel)]="character.intelligence">
+        </div>
+        <div class="form-group grid-2">
+          <span class="brutal">Von: </span>
+          <input type="number" min="0" [(ngModel)]="character.will">
+        </div>
+      </div>
+    </div>
+    <div class="form-container form-equipAbility grid-12 grid">
+      <div class="form-column grid-6">
+        <h3>Equipamentos</h3>
+        <div class="form-column-scroll">
+          <div class="form-column-item" *ngFor="let equip of character.equipments">
+            <h4>{{equip.name}}</h4>
+            <p class="italic">"{{equip.description}}"</p>
+            <p><span class="brutal">Preço: </span>{{equip.price}}</p>
+            <p><span class="brutal">Tipo: </span>{{equip.type}}</p>
+            <p><span class="brutal">Força necessária: </span>{{equip.fn}}</p>
+            <p><span class="brutal">Dano: </span>{{equip.damage}}</p>
+            <p><span class="brutal">Efeitos: </span>{{equip.effects}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-column grid-6">
+        <h3>Habilidades</h3>
+        <div class="form-column-scroll">
+          <div class="form-column-item" *ngFor="let abili of character.abilities">
+            <h4>{{abili.name}} ({{abili.type}})</h4>
+            <p><span class="brutal">Custo: </span>{{abili.cost}}</p>
+            <p><span class="brutal">Dificuldade: </span>{{abili.diff}}</p>
+            <p><span class="brutal">Requisitos: </span>{{abili.requisites}}</p>
+            <p><span class="brutal">Descrição: </span>{{abili.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="database-add-selector grid">
+    <div class="form-add-button grid-6"><button>Adicionar<br>personagem jogável</button></div>
+    <div class="form-add-button grid-6"><button>Adicionar<br>inimigo</button></div>
+  </div>
+</section>

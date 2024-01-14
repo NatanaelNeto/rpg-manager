@@ -13,13 +13,15 @@ export class DatabaseService {
   private URL_API = 'http://localhost:3000/';
 
   public getAllCharacters(): Observable<CharacterModel[]> {
-    console.log('Personagens');
     return this.http.get<CharacterModel[]>(`${this.URL_API}characters`);
   }
 
   public getAllEnemies(): Observable<CharacterModel[]> {
-    console.log('Inimigos');
     return this.http.get<CharacterModel[]>(`${this.URL_API}enemies`);
+  }
+
+  public addCharacter(character: CharacterModel, isPlayable: boolean) {
+    return this.http.post(`${this.URL_API}${isPlayable ? 'characters' : 'enemies'}`, character);
   }
 
 }

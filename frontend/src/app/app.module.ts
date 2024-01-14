@@ -16,6 +16,8 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { SexPipe } from './pipes/sex.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatabaseAddComponent } from './pages/database/database-add/database-add.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DatabaseComponent,
     DatabaseMainComponent,
     DatabaseListComponent,
+    DatabaseAddComponent,
     SexPipe
   ],
   imports: [
@@ -34,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
