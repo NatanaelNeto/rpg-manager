@@ -18,6 +18,7 @@ import { SexPipe } from './pipes/sex.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DatabaseAddComponent } from './pages/database/database-add/database-add.component';
 import { FormsModule } from '@angular/forms';
+import { AddEquipComponent } from './pages/database/database-add/add-equip/add-equip.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     DatabaseMainComponent,
     DatabaseListComponent,
     DatabaseAddComponent,
+    AddEquipComponent,
     SexPipe
   ],
   imports: [

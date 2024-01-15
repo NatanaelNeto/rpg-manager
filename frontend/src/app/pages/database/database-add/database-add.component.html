@@ -60,10 +60,10 @@
     <div class="form-container form-equipAbility grid-12 grid">
       <div class="form-column grid-6">
         <h3>
-          <button class="form-column-btn">+</button>
+          <button class="form-column-btn" (click)="panelEdit = 'equipment'">+</button>
           Equipamentos ({{character.equipments.length}})
         </h3>
-        <div class="form-column-scroll">
+        <div class="scroll">
           <div class="form-column-item" *ngFor="let equip of character.equipments">
             <h4>{{equip.name}}</h4>
             <p class="italic">"{{equip.description}}"</p>
@@ -78,10 +78,10 @@
 
       <div class="form-column grid-6">
         <h3>
-          <button class="form-column-btn">+</button>
+          <button class="form-column-btn" (click)="panelEdit = 'ability'">+</button>
           Habilidades ({{character.abilities.length}})
         </h3>
-        <div class="form-column-scroll">
+        <div class="scroll">
           <div class="form-column-item" *ngFor="let abili of character.abilities">
             <h4>{{abili.name}} ({{abili.type}})</h4>
             <p><span class="brutal">Custo: </span>{{abili.cost}}</p>
@@ -98,4 +98,6 @@
         jogável</button></div>
     <div class="form-add-button bordered grid-6"><button (click)="addChar(false)">Adicionar<br>inimigo</button></div>
   </div>
+  <app-add-equip *ngIf="panelEdit == 'equipment'" (newEquipment)="addEquipment($event)"
+    (cancel)="panelEdit = 'none'"></app-add-equip>
 </section>

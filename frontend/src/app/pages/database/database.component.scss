@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    z-index: 9999;
 
     &:hover {
       background-color: var(--brutal_black);

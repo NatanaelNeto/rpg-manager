@@ -175,5 +175,25 @@ span {
 .purple {
   background-color: var(--brutal_purple);
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+input,
+select,
+textarea {
+  border: 3px solid var(--brutal_black);
+  width: 100%;
+  padding: 3px;
+
+  &:focus {
+    border: 3px solid var(--brutal_blue);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

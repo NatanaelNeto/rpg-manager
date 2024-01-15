@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CharacterModel } from 'src/app/models/character-model';
 import { DatabaseService } from '../database.service';
+import { EquipmentModel } from 'src/app/models/equipment-model';
 
 @Component({
   selector: 'app-database-add',
@@ -22,7 +23,15 @@ export class DatabaseAddComponent {
     agility: -1,
     intelligence: -1,
     will: -1,
-    equipments: [],
+    equipments: [{
+      name: 'Teste',
+      type: 'Arma à Distância',
+      description: 'Arco simples para ataque à distância',
+      price: '200 moedas de prata',
+      damage: '-',
+      fn: 2,
+      effects: '-'
+    }],
     abilities: [],
     block: {
       armorBonus: 0,
@@ -35,6 +44,8 @@ export class DatabaseAddComponent {
     openMenu: false,
     unified: true
   }
+
+  panelEdit: 'none' | 'equipment' | 'ability' = 'none';
 
   constructor(private db: DatabaseService) { }
 
@@ -54,5 +65,11 @@ export class DatabaseAddComponent {
     }
     console.log('Salvou');
     this.db.addCharacter(this.character, isPlayable).subscribe(() => console.log('Adicionado'));
+  }
+
+  addEquipment(equip: EquipmentModel) {
+    console.log('Entrou');
+    this.panelEdit = 'none';
+    this.character.equipments.push(equip);
   }
 }
