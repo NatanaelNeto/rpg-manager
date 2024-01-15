@@ -35,10 +35,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     MatIconModule,
     BrowserAnimationsModule,
-    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

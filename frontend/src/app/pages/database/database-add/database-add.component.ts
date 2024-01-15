@@ -37,10 +37,10 @@ export class DatabaseAddComponent {
 
   constructor(private db: DatabaseService) { }
 
-  private addChar(isPlayable: boolean) {
-    if (this.character.name.length < 3 ||
-      this.character.race.length < 3 ||
-      this.character.class.length < 3 ||
+  addChar(isPlayable: boolean) {
+    if (this.character.name.length < 0 ||
+      this.character.race.length < 0 ||
+      this.character.class.length < 0 ||
       this.character.level < 0 ||
       this.character.life < 0 ||
       this.character.mana < 0 ||
@@ -48,8 +48,10 @@ export class DatabaseAddComponent {
       this.character.agility < 0 ||
       this.character.intelligence < 0 ||
       this.character.will < 0) {
+      console.log('Erro');
       return;
     }
-    this.db.addCharacter(this.character, isPlayable);
+    console.log('Salvou');
+    this.db.addCharacter(this.character, isPlayable).subscribe(() => console.log('Adicionado'));
   }
 }

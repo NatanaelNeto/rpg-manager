@@ -1,0 +1,83 @@
+.database-add {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  .form {
+    border-bottom: 3px solid var(--brutal_black);
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+
+    &-container {
+      border-bottom: 3px solid var(--brutal_black);
+      padding: 10px;
+
+      .grid {
+        gap: 10px;
+      }
+
+      &:last-child {
+        padding: 0;
+        border-bottom: none;
+      }
+
+      input,
+      select {
+        border: 3px solid var(--brutal_black);
+        width: 100%;
+        padding: 3px;
+        &:focus {
+          border: 3px solid var(--brutal_blue);
+        }
+      }
+    }
+  }
+
+  &-selector {
+    height: 100px;
+    padding: 10px;
+    background-color: var(--brutal_purple);
+
+    .form-add-button {
+      &:first-child {
+        margin-right: 5px;
+
+        button {
+          background-color: var(--brutal_green);
+          color: var(--brutal_yellow);
+
+          &:hover {
+            background-color: var(--brutal_black);
+            color: var(--brutal_white);
+          }
+        }
+      }
+
+      &:last-child {
+        margin-left: 5px;
+
+        button {
+          background-color: var(--brutal_red);
+          color: var(--brutal_orange);
+
+          &:hover {
+            background-color: var(--brutal_black);
+            color: var(--brutal_white);
+          }
+        }
+      }
+    }
+
+    button {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      font-family: 'Urbanist', sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: lowercase;
+
+    }
+  }
+}

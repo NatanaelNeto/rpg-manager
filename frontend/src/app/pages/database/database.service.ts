@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { CharacterModel } from 'src/app/models/character-model';
-import { Observable } from 'rxjs';
+import { Observable, catchError, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +20,12 @@ export class DatabaseService {
     return this.http.get<CharacterModel[]>(`${this.URL_API}enemies`);
   }
 
-  public addCharacter(character: CharacterModel, isPlayable: boolean) {
-    return this.http.post(`${this.URL_API}${isPlayable ? 'characters' : 'enemies'}`, character);
+  public addCharacter(character: CharacterModel, isPlayable: boolean): Observable<CharacterModel> {
+    return this.http.post<CharacterModel>(`${this.URL_API}${isPlayable ? 'characters' : 'enemies'}`, character);
+  }
+
+  public deleteChar(id: number, isPlayable: boolean): Observable<CharacterModel> {
+    return this.http.delete<CharacterModel>(`${this.URL_API}${isPlayable ? 'characters' : 'enemies'}/${id}`);
   }
 
 }

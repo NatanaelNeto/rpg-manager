@@ -9,17 +9,14 @@
       "race": "Centauro",
       "class": "Ranger",
       "level": 5,
-
       "life": 80,
       "currLife": 80,
       "mana": 60,
       "currMana": 60,
-
       "strength": 7,
       "agility": 10,
       "intelligence": 3,
       "will": 3,
-
       "equipments": [
         {
           "name": "Arco Composto",
@@ -40,25 +37,52 @@
           "effects": "Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6)"
         }
       ],
-      "abilities": [{
-        "name": "Guarda Defletora",
-        "type": "Reação",
-        "cost": "10 de mana",
-        "requisites": "Portar, pelo menos, uma espada",
-        "diff": 10,
-        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
-      }],
-
+      "abilities": [
+        {
+          "name": "Guarda Defletora",
+          "type": "Reação",
+          "cost": "10 de mana",
+          "requisites": "Portar, pelo menos, uma espada",
+          "diff": 10,
+          "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
+        }
+      ],
       "block": {
         "armorBonus": 0,
         "blockBonus": 0
       },
-
       "dodge": {
         "armorBonus": 0,
         "blockBonus": 0
       },
       "openMenu": false
+    },
+    {
+      "name": "Lyra",
+      "sex": "F",
+      "race": "Levent",
+      "class": "Paladina",
+      "level": 1,
+      "life": 60,
+      "currLife": 0,
+      "mana": 60,
+      "currMana": 0,
+      "strength": 3,
+      "agility": 3,
+      "intelligence": 3,
+      "will": 4,
+      "equipments": [],
+      "abilities": [],
+      "block": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      },
+      "dodge": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      },
+      "openMenu": false,
+      "id": 1
     }
   ],
   "enemies": [
@@ -70,17 +94,14 @@
       "race": "Orc",
       "class": "Guerreiro",
       "level": 3,
-
       "life": 50,
       "currLife": 50,
       "mana": 30,
       "currMana": 30,
-
       "strength": 3,
       "agility": 5,
       "intelligence": 3,
       "will": 3,
-
       "equipments": [
         {
           "name": "Arco Composto",
@@ -101,25 +122,52 @@
           "effects": "Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6)"
         }
       ],
-      "abilities": [{
-        "name": "Guarda Defletora",
-        "type": "Reação",
-        "cost": "10 de mana",
-        "requisites": "Portar, pelo menos, uma espada",
-        "diff": 10,
-        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
-      }],
-
+      "abilities": [
+        {
+          "name": "Guarda Defletora",
+          "type": "Reação",
+          "cost": "10 de mana",
+          "requisites": "Portar, pelo menos, uma espada",
+          "diff": 10,
+          "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
+        }
+      ],
       "block": {
         "armorBonus": 0,
         "blockBonus": 0
       },
-
       "dodge": {
         "armorBonus": 0,
         "blockBonus": 0
       },
       "openMenu": false
+    },
+    {
+      "name": "Truga",
+      "sex": "F",
+      "race": "Orc",
+      "class": "Guerreira",
+      "level": 2,
+      "life": 20,
+      "currLife": 0,
+      "mana": 20,
+      "currMana": 0,
+      "strength": 2,
+      "agility": 2,
+      "intelligence": 0,
+      "will": 0,
+      "equipments": [],
+      "abilities": [],
+      "block": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      },
+      "dodge": {
+        "armorBonus": 0,
+        "blockBonus": 0
+      },
+      "openMenu": false,
+      "id": 1
     }
   ]
 }
