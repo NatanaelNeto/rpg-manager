@@ -32,7 +32,8 @@ export class DatabaseAddComponent {
       armorBonus: 0,
       blockBonus: 0
     },
-    openMenu: false
+    openMenu: false,
+    unified: true
   }
 
   constructor(private db: DatabaseService) { }

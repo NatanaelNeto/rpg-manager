@@ -27,8 +27,67 @@
         border: 3px solid var(--brutal_black);
         width: 100%;
         padding: 3px;
+
         &:focus {
           border: 3px solid var(--brutal_blue);
+        }
+      }
+
+      .unified {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        border: 3px solid var(--brutal_black);
+        margin-right: 10px;
+        position: relative;
+
+        &.checked::before {
+          content: '';
+          height: 12px;
+          width: 12px;
+          background-color: var(--brutal_black);
+          top: 1px;
+          left: 2px;
+          position: absolute;
+        }
+
+        &-group {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    &-column {
+
+      &:first-child {
+        border-right: 3px solid var(--brutal_black);
+      }
+
+      h3 {
+        width: 100%;
+        border-bottom: 3px solid var(--brutal_black);
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      &-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 50px;
+        width: 49px;
+        border-left: 3px solid var(--brutal_black);
+        color: var(--brutal_yellow);
+        background-color: var(--brutal_green);
+        font-size: 32px;
+        font-family: 'Urbanist', sans-serif;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--brutal_black);
+          color: var(--brutal_white);
         }
       }
     }
