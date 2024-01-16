@@ -25,21 +25,38 @@ export class DatabaseAddComponent {
     intelligence: -1,
     will: -1,
     equipments: [],
-    abilities: [],
+    abilities: [
+      {
+        "name": "Guarda Defletora",
+        "type": "Reação",
+        "cost": "10 de mana",
+        "requisites": "Portar, pelo menos, uma espada",
+        "diff": 10,
+        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
+      },
+      {
+        "name": "Guarda Defletora",
+        "type": "Reação",
+        "cost": "10 de mana",
+        "requisites": "Portar, pelo menos, uma espada",
+        "diff": 10,
+        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
+      }
+    ],
     block: {
       current: 0,
-      armorBonus: 0,
-      blockBonus: 0
+      armorBonus: -1,
+      blockBonus: -1
     },
     dodge: {
       current: 0,
-      armorBonus: 0,
-      dodgeBonus: 0
+      armorBonus: -1,
+      dodgeBonus: -1
     },
     determination: {
       current: 0,
-      armorBonus: 0,
-      determinationBonus: 0
+      armorBonus: -1,
+      determinationBonus: -1
     },
     openMenu: false,
     unified: true
@@ -79,5 +96,12 @@ export class DatabaseAddComponent {
   addAbility(abili: AbilityModel) {
     this.panelEdit = 'none';
     this.character.abilities.push(abili);
+  }
+
+  setArmorBonus(event: any) {
+    this.character.block.armorBonus = event.target.value;
+    this.character.dodge.armorBonus = event.target.value;
+    this.character.determination.armorBonus = event.target.value;
+
   }
 }

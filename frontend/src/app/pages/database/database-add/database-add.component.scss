@@ -113,11 +113,23 @@
           color: var(--brutal_white);
         }
       }
+
+      &-item {
+        margin-bottom: 10px;
+        border-bottom: 1px solid var(--brutal_black);
+        padding-bottom: 10px;
+
+        &:last-child {
+          margin: 0;
+          border: 0;
+          padding: 0;
+        }
+      }
     }
   }
 
   &-selector {
-    height: 100px;
+    height: 70px;
     padding: 10px;
     background-color: var(--brutal_purple);
 
