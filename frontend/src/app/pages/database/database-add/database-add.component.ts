@@ -25,24 +25,7 @@ export class DatabaseAddComponent {
     intelligence: -1,
     will: -1,
     equipments: [],
-    abilities: [
-      {
-        "name": "Guarda Defletora",
-        "type": "Reação",
-        "cost": "10 de mana",
-        "requisites": "Portar, pelo menos, uma espada",
-        "diff": 10,
-        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
-      },
-      {
-        "name": "Guarda Defletora",
-        "type": "Reação",
-        "cost": "10 de mana",
-        "requisites": "Portar, pelo menos, uma espada",
-        "diff": 10,
-        "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
-      }
-    ],
+    abilities: [],
     block: {
       current: 0,
       armorBonus: -1,

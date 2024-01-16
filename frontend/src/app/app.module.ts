@@ -20,12 +20,14 @@ import { DatabaseAddComponent } from './pages/database/database-add/database-add
 import { FormsModule } from '@angular/forms';
 import { AddEquipComponent } from './pages/database/database-add/add-equip/add-equip.component';
 import { AddAbilityComponent } from './pages/database/database-add/add-ability/add-ability.component';
+import { AlertComponent } from './components/alert/alert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NavbarComponent,
+    AlertComponent,
     SessionComponent,
     SessionSidebarComponent,
     DatabaseComponent,

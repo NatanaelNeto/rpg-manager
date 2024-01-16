@@ -1,0 +1,27 @@
+.alert-card {
+  padding: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 300px;
+
+  p {
+    font-family: 'Urbanist', sans-serif;
+  }
+
+  &.error {
+    background-color: var(--brutal_red);
+    color: var(--brutal_black);
+  }
+
+  &.sucess {
+    background-color: var(--brutal_green);
+    color: var(--brutal_black);
+  }
+
+  &.alert {
+    background-color: var(--brutal_yellow);
+    color: var(--brutal_black);
+  }
+
+}
