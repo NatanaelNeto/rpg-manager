@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DatabaseAddComponent } from './pages/database/database-add/database-add.component';
 import { FormsModule } from '@angular/forms';
 import { AddEquipComponent } from './pages/database/database-add/add-equip/add-equip.component';
+import { AddAbilityComponent } from './pages/database/database-add/add-ability/add-ability.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AddEquipComponent } from './pages/database/database-add/add-equip/add-e
     DatabaseListComponent,
     DatabaseAddComponent,
     AddEquipComponent,
+    AddAbilityComponent,
     SexPipe
   ],
   imports: [

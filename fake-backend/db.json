@@ -2,172 +2,81 @@
   "adventures": [],
   "characters": [
     {
-      "id": 0,
-      "name": "Incrível Solveig",
-      "sex": "F",
-      "unified": true,
-      "race": "Centauro",
-      "class": "Ranger",
-      "level": 5,
-      "life": 80,
-      "currLife": 80,
-      "mana": 60,
-      "currMana": 60,
-      "strength": 7,
-      "agility": 10,
-      "intelligence": 3,
-      "will": 3,
-      "equipments": [
-        {
-          "name": "Arco Composto",
-          "type": "Arma a distância",
-          "description": "Um arco simples",
-          "price": "200 moedas de prata",
-          "damage": "-",
-          "fn": 2,
-          "effects": "Permite atirar flechas"
-        },
-        {
-          "name": "Maça Espinhosa",
-          "type": "Arma corpo a corpo e a distância",
-          "description": "Uma maça com espinhos em sua ponta",
-          "price": "150 moedas de prata",
-          "damage": "For + 1d6",
-          "fn": 4,
-          "effects": "Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6)"
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Guarda Defletora",
-          "type": "Reação",
-          "cost": "10 de mana",
-          "requisites": "Portar, pelo menos, uma espada",
-          "diff": 10,
-          "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
-        }
-      ],
-      "block": {
-        "armorBonus": 0,
-        "blockBonus": 0
-      },
-      "dodge": {
-        "armorBonus": 0,
-        "blockBonus": 0
-      },
-      "openMenu": false
-    },
-    {
-      "name": "Lyra",
+      "name": "Lyra Tuk",
       "sex": "F",
       "race": "Levent",
       "class": "Paladina",
       "level": 1,
       "life": 60,
-      "currLife": 0,
+      "currLife": 60,
       "mana": 60,
-      "currMana": 0,
+      "currMana": 60,
       "strength": 3,
       "agility": 3,
       "intelligence": 3,
       "will": 4,
       "equipments": [],
-      "abilities": [],
+      "abilities": [
+        {
+          "name": "Asas Ancestrais",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Voa e plana. Não pode parar em voo. Encontrão causa o dobro de dano,"
+        },
+        {
+          "name": "Mestra de Armas I",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "+3 de dano ao atacar"
+        },
+        {
+          "name": "Código da Lealdadde",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Não pode atacar um combatente por um fio. Não permite lutas injustas. Não trai e não aceita traição. Recupera o dobro de PV e PM"
+        },
+        {
+          "name": "Combate Tático",
+          "type": "Reação",
+          "cost": "-",
+          "requisites": "",
+          "diff": 0,
+          "description": "Derrotar um oponente com um ataque corporal permite outro ataque (sem custos)"
+        },
+        {
+          "name": "Justiça Final I",
+          "type": "Ação",
+          "cost": "25 de mana",
+          "requisites": "-",
+          "diff": 0,
+          "description": "O ataque causa o dobro de dano (triplo para mortos-vivos, infernais, espíritos ou espectros)"
+        }
+      ],
       "block": {
+        "current": 8,
         "armorBonus": 0,
         "blockBonus": 0
       },
       "dodge": {
+        "current": 8,
         "armorBonus": 0,
-        "blockBonus": 0
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 12,
+        "armorBonus": 0,
+        "determinationBonus": 0
       },
       "openMenu": false,
+      "unified": true,
       "id": 1
     }
   ],
-  "enemies": [
-    {
-      "id": 0,
-      "name": "Kruvakk",
-      "sex": "M",
-      "unified": false,
-      "race": "Orc",
-      "class": "Guerreiro",
-      "level": 3,
-      "life": 50,
-      "currLife": 50,
-      "mana": 30,
-      "currMana": 30,
-      "strength": 3,
-      "agility": 5,
-      "intelligence": 3,
-      "will": 3,
-      "equipments": [
-        {
-          "name": "Arco Composto",
-          "type": "Arma a distância",
-          "description": "Um arco simples",
-          "price": "200 moedas de prata",
-          "damage": "-",
-          "fn": 2,
-          "effects": "Permite atirar flechas"
-        },
-        {
-          "name": "Maça Espinhosa",
-          "type": "Arma corpo a corpo e a distância",
-          "description": "Uma maça com espinhos em sua ponta",
-          "price": "150 moedas de prata",
-          "damage": "For + 1d6",
-          "fn": 4,
-          "effects": "Ao acertar um alvo a uma distância corpo a corpo, realize mais um teste de defesa. Caso passe, o alvo está sangrando por 1d4 turnos. Pode ser arremesada (dano igual a Agi + 1d6)"
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Guarda Defletora",
-          "type": "Reação",
-          "cost": "10 de mana",
-          "requisites": "Portar, pelo menos, uma espada",
-          "diff": 10,
-          "description": "Você gira sua espada, usando ela para defletir projéteis ou golpes. Caso seja um golpe corpo a corpo, você causa 5 de dano."
-        }
-      ],
-      "block": {
-        "armorBonus": 0,
-        "blockBonus": 0
-      },
-      "dodge": {
-        "armorBonus": 0,
-        "blockBonus": 0
-      },
-      "openMenu": false
-    },
-    {
-      "name": "Truga",
-      "sex": "F",
-      "race": "Orc",
-      "class": "Guerreira",
-      "level": 2,
-      "life": 20,
-      "currLife": 0,
-      "mana": 20,
-      "currMana": 0,
-      "strength": 2,
-      "agility": 2,
-      "intelligence": 0,
-      "will": 0,
-      "equipments": [],
-      "abilities": [],
-      "block": {
-        "armorBonus": 0,
-        "blockBonus": 0
-      },
-      "dodge": {
-        "armorBonus": 0,
-        "blockBonus": 0
-      },
-      "openMenu": false,
-      "id": 1
-    }
-  ]
+  "enemies": []
 }

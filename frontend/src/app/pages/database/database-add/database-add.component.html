@@ -99,5 +99,6 @@
     <div class="form-add-button bordered grid-6"><button (click)="addChar(false)">Adicionar<br>inimigo</button></div>
   </div>
   <app-add-equip *ngIf="panelEdit == 'equipment'" (newEquipment)="addEquipment($event)"
-    (cancel)="panelEdit = 'none'"></app-add-equip>
+    (cancel)="panelEdit ='none'"></app-add-equip>
+    <app-add-ability *ngIf="panelEdit == 'ability'" (newAbility)="addAbility($event)" (cancel)="panelEdit = 'none'"></app-add-ability>
 </section>

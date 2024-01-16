@@ -1,0 +1,38 @@
+<section class="add-ability bordered shaded">
+  <h2>Adicionar Habilidade</h2>
+  <div class="grid">
+    <div class="grid-4">
+      <input type="text" [(ngModel)]="abili.name" placeholder="Nome">
+    </div>
+    <div class="grid-4">
+      <select [(ngModel)]="abili.type">
+        <option value="Ação">Ação</option>
+        <option value="Reação">Reação</option>
+        <option value="Suporte">Suporte</option>
+      </select>
+    </div>
+    <div class="grid-2">
+      <input type="text" [(ngModel)]="abili.cost" placeholder="Custo">
+    </div>
+    <div class="inline grid-2">
+      <p>Diff</p>
+      <input type="number" [(ngModel)]="abili.diff">
+    </div>
+    <div class="grid-6">
+      <input type="text" placeholder="Requisitos" [(ngModel)]="abili.requisites">
+    </div>
+    <div class="grid-6">
+      <input type="text" placeholder="Descrição" [(ngModel)]="abili.description">
+    </div>
+    <div class="grid-6">
+      <button class="add-btn btn bordered" (click)="addAbility()">
+        Adicionar
+      </button>
+    </div>
+    <div class="grid-6">
+      <button class="cancel-btn btn bordered" (click)="cancelAbility()">
+        Cancelar
+      </button>
+    </div>
+  </div>
+</section>

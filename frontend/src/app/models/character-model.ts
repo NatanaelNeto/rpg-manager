@@ -25,13 +25,21 @@ export class CharacterModel {
   abilities: AbilityModel[];
 
   block: {
-    armorBonus: 0;
-    blockBonus: 0;
+    current: number,
+    armorBonus: number;
+    blockBonus: number;
   }
 
   dodge: {
-    armorBonus: 0;
-    blockBonus: 0;
+    current: number,
+    armorBonus: number;
+    dodgeBonus: number;
+  }
+
+  determination: {
+    current: number,
+    armorBonus: number;
+    determinationBonus: number;
   }
 
   location?: string;

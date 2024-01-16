@@ -1,0 +1,43 @@
+.add-ability {
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--brutal_white);
+  width: 70vw;
+  transform: translate(-50%, -50%);
+
+  .grid {
+    gap: 10px;
+  }
+
+  .inline {
+    display: flex;
+
+    p {
+      margin-right: 5px;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--brutal_black);
+    margin-bottom: 10px;
+  }
+
+  .add-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+
+  .add-btn {
+    background-color: var(--brutal_green);
+    color: var(--brutal_yellow);
+  }
+
+  .cancel-btn {
+    background-color: var(--brutal_red);
+    color: var(--brutal_orange);
+  }
+}

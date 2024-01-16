@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CharacterModel } from 'src/app/models/character-model';
 import { DatabaseService } from '../database.service';
 import { EquipmentModel } from 'src/app/models/equipment-model';
+import { AbilityModel } from 'src/app/models/ability-model';
 
 @Component({
   selector: 'app-database-add',
@@ -23,23 +24,22 @@ export class DatabaseAddComponent {
     agility: -1,
     intelligence: -1,
     will: -1,
-    equipments: [{
-      name: 'Teste',
-      type: 'Arma à Distância',
-      description: 'Arco simples para ataque à distância',
-      price: '200 moedas de prata',
-      damage: '-',
-      fn: 2,
-      effects: '-'
-    }],
+    equipments: [],
     abilities: [],
     block: {
+      current: 0,
       armorBonus: 0,
       blockBonus: 0
     },
     dodge: {
+      current: 0,
       armorBonus: 0,
-      blockBonus: 0
+      dodgeBonus: 0
+    },
+    determination: {
+      current: 0,
+      armorBonus: 0,
+      determinationBonus: 0
     },
     openMenu: false,
     unified: true
@@ -64,12 +64,20 @@ export class DatabaseAddComponent {
       return;
     }
     console.log('Salvou');
+    this.character.currLife = this.character.life;
+    this.character.currMana = this.character.mana;
+    this.character.block.current = 5 + this.character.strength + this.character.block.armorBonus + this.character.block.blockBonus;
+    this.character.dodge.current = 5 + this.character.agility + this.character.dodge.armorBonus + this.character.dodge.dodgeBonus;
+    this.character.determination.current = 5 + Math.max(this.character.intelligence, this.character.will) + this.character.determination.armorBonus + this.character.determination.determinationBonus;
     this.db.addCharacter(this.character, isPlayable).subscribe(() => console.log('Adicionado'));
   }
 
   addEquipment(equip: EquipmentModel) {
-    console.log('Entrou');
     this.panelEdit = 'none';
     this.character.equipments.push(equip);
+  }
+  addAbility(abili: AbilityModel) {
+    this.panelEdit = 'none';
+    this.character.abilities.push(abili);
   }
 }

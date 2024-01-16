@@ -6,7 +6,7 @@
 
         <div *ngFor="let c of chars" class="list-item">
           <div class="list-item-header">
-            <h3>{{c.name}}, {{c.sex | sex:c.unified}} {{c.race}} {{c.class}}</h3>
+            <h3>{{c.name}}, {{c.sex | sex:c.unified}} {{c.race}} {{c.class}} <span>Nível {{c.level}}</span></h3>
             <mat-icon class="list-item-card-drop {{c.openMenu ? '' : 'close'}}"
               (click)="c.openMenu = !c.openMenu">arrow_drop_up</mat-icon>
           </div>
@@ -17,7 +17,7 @@
                 </span>{{c.currLife}}</p>
               <p><span class="brutal">Mana máxima: </span>{{c.mana}} | <span class="brutal">Mana atual:
                 </span>{{c.currMana}}</p>
-              <p><span class="brutal">Nível: </span>{{c.level}}</p>
+                <p><span class="brutal">Bloqueio: </span>{{c.block.current}} | <span class="brutal">Esquiva: </span>{{c.dodge.current}} | <span class="brutal">Determinação: </span>{{c.determination.current}}</p>
               <p><span class="brutal">Força: </span>{{c.strength}} | <span class="brutal">Agilidade:
                 </span>{{c.agility}} | <span class="brutal">Inteligência: </span>{{c.intelligence}} | <span
                   class="brutal">Vontade: </span>{{c.will}}</p>
