@@ -3,6 +3,7 @@ import { CharacterModel } from 'src/app/models/character-model';
 import { DatabaseService } from '../database.service';
 import { EquipmentModel } from 'src/app/models/equipment-model';
 import { AbilityModel } from 'src/app/models/ability-model';
+import { AlertService } from 'src/app/components/alert/alert.service';
 
 @Component({
   selector: 'app-database-add',
@@ -47,7 +48,7 @@ export class DatabaseAddComponent {
 
   panelEdit: 'none' | 'equipment' | 'ability' = 'none';
 
-  constructor(private db: DatabaseService) { }
+  constructor(private db: DatabaseService, private alertService: AlertService) { }
 
   addChar(isPlayable: boolean) {
     if (this.character.name.length < 0 ||
@@ -60,16 +61,18 @@ export class DatabaseAddComponent {
       this.character.agility < 0 ||
       this.character.intelligence < 0 ||
       this.character.will < 0) {
-      console.log('Erro');
+      this.alertService.openPanel({ state: true, type: 'error', message: 'Preencha todos os campos antes de enviar!' });
       return;
     }
-    console.log('Salvou');
+    this.alertService.openPanel({ state: true, type: 'alert', message: 'Enviando para o servidor...' });
     this.character.currLife = this.character.life;
     this.character.currMana = this.character.mana;
-    this.character.block.current = 5 + this.character.strength + this.character.block.armorBonus + this.character.block.blockBonus;
-    this.character.dodge.current = 5 + this.character.agility + this.character.dodge.armorBonus + this.character.dodge.dodgeBonus;
-    this.character.determination.current = 5 + Math.max(this.character.intelligence, this.character.will) + this.character.determination.armorBonus + this.character.determination.determinationBonus;
-    this.db.addCharacter(this.character, isPlayable).subscribe(() => console.log('Adicionado'));
+    this.character.block.current = 5 + Number(this.character.strength) + Number(this.character.block.armorBonus) + Number(this.character.block.blockBonus);
+    this.character.dodge.current = 5 + Number(this.character.agility) + Number(this.character.dodge.armorBonus) + Number(this.character.dodge.dodgeBonus);
+    this.character.determination.current = 8 + Math.max(this.character.intelligence, this.character.will) + Number(this.character.determination.armorBonus) + Number(this.character.determination.determinationBonus);
+    this.db.addCharacter(this.character, isPlayable).subscribe(() => {
+      this.alertService.openPanel({ state: true, type: 'sucess', message: 'Adicionado!' });
+    });
   }
 
   addEquipment(equip: EquipmentModel) {

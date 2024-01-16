@@ -76,6 +76,386 @@
       "openMenu": false,
       "unified": true,
       "id": 1
+    },
+    {
+      "name": "Aizengard Elf",
+      "sex": "M",
+      "race": "Humano",
+      "class": "Feiticeiro",
+      "level": 1,
+      "life": 60,
+      "currLife": 60,
+      "mana": 60,
+      "currMana": 60,
+      "strength": 3,
+      "agility": 3,
+      "intelligence": 5,
+      "will": 4,
+      "equipments": [],
+      "abilities": [
+        {
+          "name": "Mente Disciplinada",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Determinação +2. Dificuldade das magias reduzida em 1"
+        },
+        {
+          "name": "Congelar",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 8,
+          "description": "Congela um objeto inanimado. Criaturas sobre algo congelado devem testar agilidade (dif 12). Caso falhem, cairão."
+        },
+        {
+          "name": "Rajada de Gelo",
+          "type": "Ação",
+          "cost": "20",
+          "requisites": "Congelar",
+          "diff": 12,
+          "description": "Dispara uma rajada de gelo que causa 20 de dano de frio. Criaturas vivas ficam enregeladas por 1 turno."
+        },
+        {
+          "name": "Adaptabilidade",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "+1 em um atributo qualquer (inteligência)"
+        },
+        {
+          "name": "Conhecimento Arcano",
+          "type": "Ação",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Consegue canalizar, detectar, decifrar e utilizar poderes mágicos. Pode usar vida como custo da habilidade (2 de vida para 1 de mana)"
+        }
+      ],
+      "block": {
+        "current": 8,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 8,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 15,
+        "armorBonus": "0",
+        "determinationBonus": 2
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 2
+    },
+    {
+      "name": "Aerin Roosemboldt",
+      "sex": "F",
+      "race": "Faen",
+      "class": "Ladina",
+      "level": 1,
+      "life": 60,
+      "currLife": 60,
+      "mana": 60,
+      "currMana": 60,
+      "strength": 2,
+      "agility": 5,
+      "intelligence": 4,
+      "will": 2,
+      "equipments": [],
+      "abilities": [
+        {
+          "name": "Constituição Feérica",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Corpo leve e pode voar. Encontrão causa o dobro de dano da arma."
+        },
+        {
+          "name": "Isnuu",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Pode usar habilidades de feiticeiro. Dificuldade das magias reduzida em 1."
+        },
+        {
+          "name": "Contatos no Crime",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Consegue informações privilegiadas e custos reduzidos de compra de itens."
+        },
+        {
+          "name": "Armadilheira",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Pode desarmar e armar qualquer armadilhas (desde que tenha recurso para criar). Armadilhas armadas possuem 1d6 + Inteligência de dificuldade."
+        },
+        {
+          "name": "Gatuno",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Consegue furtar bolsas e arrombar portas. Rola 3d6 em testes de furtividade ou deslocamento."
+        }
+      ],
+      "block": {
+        "current": 7,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 10,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 12,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 3
+    },
+    {
+      "name": "Orion Lander",
+      "sex": "M",
+      "race": "Hoglin",
+      "class": "Guerreiro",
+      "level": 1,
+      "life": 60,
+      "currLife": 60,
+      "mana": 60,
+      "currMana": 60,
+      "strength": 5,
+      "agility": 3,
+      "intelligence": 2,
+      "will": 3,
+      "equipments": [],
+      "abilities": [
+        {
+          "name": "Regurgitar",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 10,
+          "description": "Só pode ser usada 2 vezes por combate. Vomita nos inimigos ao redor. Teste de força (dif = determinação). Caso falhem, tomam 10 de dano e precisam testar agilidade (dif 12) para não caírem. Ficam 1d4 turnos envenenados."
+        },
+        {
+          "name": "Mestre de Armas I",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "",
+          "diff": 0,
+          "description": "+3 de dano ao atacar."
+        },
+        {
+          "name": "Combate em Grupo",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "+1 em testes de ataque para cada aliado atacando o mesmo alvo"
+        },
+        {
+          "name": "Ataque Simultâneo",
+          "type": "Ação",
+          "cost": "20",
+          "requisites": "Combate em Grupo",
+          "diff": 0,
+          "description": "Ao atacar, todos os aliados poderão realizar um ataque normal ao oponente."
+        },
+        {
+          "name": "Grito de Guerra I",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Todos os aliados próximos ganham +1 nos testes e remove efeitos de medo. Não pode ser utilizado caso já esteja sob efeito de medo."
+        }
+      ],
+      "block": {
+        "current": 10,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 8,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 11,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 4
+    },
+    {
+      "name": "Bjorn Hallstatt",
+      "sex": "M",
+      "race": "Aesir",
+      "class": "Rúnico",
+      "level": 1,
+      "life": 60,
+      "currLife": 60,
+      "mana": 60,
+      "currMana": 60,
+      "strength": 5,
+      "agility": 2,
+      "intelligence": 4,
+      "will": 3,
+      "equipments": [],
+      "abilities": [
+        {
+          "name": "Conhecimento Arcano",
+          "type": "Ação",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Consegue canalizar, detectar, decifrar e utilizar poderes mágicos. Pode usar vida como custo da habilidade (2 de vida para 1 de mana)"
+        },
+        {
+          "name": "Vigor Nórdico",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Sofre metade do dano de frio e é imune a enregelamento."
+        },
+        {
+          "name": "Arma Gélida",
+          "type": "Ação",
+          "cost": "5",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Atacar com uma arma marcada com a runa pessoal adiciona +8 de dano de frio."
+        },
+        {
+          "name": "Fúria Bestial",
+          "type": "Ação",
+          "cost": "30",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Recebe +2 de Força e fica imune a efeitos de Medo. Espírito animal limitado a Urso e Lobo."
+        },
+        {
+          "name": "Conjurar Escudo",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 10,
+          "description": "Conjura um escudo que deflete ataques. Pode ser segurado (Bloqueio +2, FN 2, ocupa 1 mão). Dura 2 turnos."
+        }
+      ],
+      "block": {
+        "current": 10,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 7,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 12,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 5
+    },
+    {
+      "name": "Madlayne",
+      "sex": "F",
+      "race": "Faen",
+      "class": "Feiticeira",
+      "level": 1,
+      "life": 60,
+      "currLife": 60,
+      "mana": 65,
+      "currMana": 65,
+      "strength": 2,
+      "agility": 4,
+      "intelligence": 4,
+      "will": 3,
+      "equipments": [],
+      "abilities": [
+        {
+          "name": "Constituição Feérica",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Corpo leve e pode voar. Encontrão causa o dobro de dano da arma."
+        },
+        {
+          "name": "Conhecimento Arcano",
+          "type": "Ação",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Consegue canalizar, detectar, decifrar e utilizar poderes mágicos. Pode usar vida como custo da habilidade (2 de vida para 1 de mana)"
+        },
+        {
+          "name": "Herança Feérica",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Imunidade a efeitos mentais e Medo. Percebe ilusões imediatamente. Ganha +5 de mana."
+        },
+        {
+          "name": "Presença Real",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Permite comunicação com artrópodes, dar comandos e invocar. Resistência a habilidades provindas de artrópodes."
+        },
+        {
+          "name": "Mente Disciplinada",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Determinação +2. Dificuldade das magias reduzida em 1"
+        }
+      ],
+      "block": {
+        "current": 7,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 9,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 14,
+        "armorBonus": "0",
+        "determinationBonus": 2
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 6
     }
   ],
   "enemies": []
