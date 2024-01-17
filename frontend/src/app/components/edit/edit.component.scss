@@ -6,7 +6,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: var(--brutal_white);
   z-index: 9991;
 
@@ -151,6 +151,33 @@
         margin-bottom: 10px;
         border-bottom: 1px solid var(--brutal_black);
         padding-bottom: 10px;
+        position: relative;
+
+        h4.toDelete {
+          color: var(--brutal_red);
+        }
+
+        .confirm-delete {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 20px;
+          right: 20px;
+          border-radius: 25px;
+          background-color: var(--brutal_red);
+          color: var(--brutal_black);
+          border-left: 3px solid var(--brutal_black);
+          font-family: 'Urbanist', sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--brutal_black);
+            color: var(--brutal_white);
+          }
+        }
 
         &:last-child {
           margin: 0;

@@ -474,18 +474,18 @@
       "equipments": [],
       "abilities": [],
       "block": {
-        "current": 9,
-        "armorBonus": "0",
+        "current": 10,
+        "armorBonus": "1",
         "blockBonus": 0
       },
       "dodge": {
-        "current": 8,
-        "armorBonus": "0",
+        "current": 9,
+        "armorBonus": "1",
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 13,
-        "armorBonus": "0",
+        "current": 12,
+        "armorBonus": "1",
         "determinationBonus": 0
       },
       "openMenu": false,

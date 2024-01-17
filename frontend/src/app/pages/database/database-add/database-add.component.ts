@@ -25,8 +25,25 @@ export class DatabaseAddComponent {
     agility: -1,
     intelligence: -1,
     will: -1,
-    equipments: [],
-    abilities: [],
+    equipments: [
+      {
+        name: 'Teste',
+        type: 'Teste',
+        description: 'Teste',
+        price: 'Teste',
+        damage: 'Teste',
+        fn: 100,
+        effects: 'Teste',
+      }
+    ],
+    abilities: [{
+      name: 'Teste 2',
+      type: "Suporte",
+      cost: 'Teste 2',
+      diff: 0,
+      requisites: 'Teste 2',
+      description: 'Teste 2',
+    }],
     block: {
       current: 0,
       armorBonus: -1,
@@ -88,6 +105,48 @@ export class DatabaseAddComponent {
     this.character.block.armorBonus = event.target.value;
     this.character.dodge.armorBonus = event.target.value;
     this.character.determination.armorBonus = event.target.value;
+  }
 
+  equipSelected: EquipmentModel;
+  confirmEquip: boolean;
+  abiliSelected: AbilityModel;
+  confirmAbili: boolean;
+
+  setEquip(e: EquipmentModel) {
+    if (!this.confirmEquip) {
+      this.confirmEquip = true;
+      this.equipSelected = e;
+      return;
+    }
+    else if (this.equipSelected != e) {
+      this.equipSelected = e;
+      return;
+    }
+    this.confirmEquip = false;
+  }
+
+  deleteEquip() {
+    this.confirmEquip = false;
+    this.character.equipments = this.character.equipments.filter(e => e.name != this.equipSelected.name);
+    this.alertService.openPanel({ state: true, type: 'sucess', message: 'Equipamento perdido para sempre' });
+  }
+
+  setAbili(a: AbilityModel) {
+    if (!this.confirmAbili) {
+      this.confirmAbili = true;
+      this.abiliSelected = a;
+      return;
+    }
+    else if (this.abiliSelected != a) {
+      this.abiliSelected = a;
+      return;
+    }
+    this.confirmAbili = false;
+  }
+
+  deleteAbili() {
+    this.confirmAbili = false;
+    this.character.abilities = this.character.abilities.filter(e => e.name != this.abiliSelected.name);
+    this.alertService.openPanel({ state: true, type: 'sucess', message: 'Habilidade perdida para sempre' });
   }
 }

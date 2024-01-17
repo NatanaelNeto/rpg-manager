@@ -1,4 +1,4 @@
-import { AbilityModel } from './../../../../models/ability-model';
+import { AbilityModel } from '../../models/ability-model';
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
@@ -24,7 +24,7 @@ export class AddAbilityComponent {
   }
 
   addAbility() {
-    if(
+    if (
       this.abili.name.length < 0 ||
       this.abili.cost.length < 0 ||
       this.abili.requisites.length < 0 ||

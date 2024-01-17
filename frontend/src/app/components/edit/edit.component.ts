@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { AbilityModel } from 'src/app/models/ability-model';
 import { CharacterModel } from 'src/app/models/character-model';
 import { EquipmentModel } from 'src/app/models/equipment-model';
+import { AlertService } from '../alert/alert.service';
 
 @Component({
   selector: 'app-edit',
@@ -43,8 +44,18 @@ export class EditComponent {
     openMenu: false
   }
 
+  @Output() updatedChar: EventEmitter<CharacterModel> = new EventEmitter<CharacterModel>();
+  @Output() cancel: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   panelEdit: 'none' | 'ability' | 'equipment' = 'none';
 
+  equipSelected: EquipmentModel;
+  confirmEquip: boolean;
+  abiliSelected: AbilityModel;
+  confirmAbili: boolean;
+
+
+  constructor(private alertService: AlertService) { }
   addEquipment(equip: EquipmentModel) {
     this.panelEdit = 'none';
     this.character.equipments.push(equip);
@@ -61,14 +72,54 @@ export class EditComponent {
   }
 
   editChar() {
+    this.character.currLife = this.character.life;
+    this.character.currMana = this.character.mana;
+    this.character.block.current = 5 + Number(this.character.strength) + Number(this.character.block.armorBonus) + Number(this.character.block.blockBonus);
+    this.character.dodge.current = 5 + Number(this.character.agility) + Number(this.character.dodge.armorBonus) + Number(this.character.dodge.dodgeBonus);
+    this.character.determination.current = 8 + Math.max(this.character.intelligence, this.character.will) + Number(this.character.determination.armorBonus) + Number(this.character.determination.determinationBonus);
     this.updatedChar.emit(this.character);
   }
 
   cancelChar() {
     this.cancel.emit(true);
-
   }
 
-  @Output() updatedChar: EventEmitter<CharacterModel> = new EventEmitter<CharacterModel>();
-  @Output() cancel: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  setEquip(e: EquipmentModel) {
+    if (!this.confirmEquip) {
+      this.confirmEquip = true;
+      this.equipSelected = e;
+      return;
+    }
+    else if (this.equipSelected != e) {
+      this.equipSelected = e;
+      return;
+    }
+    this.confirmEquip = false;
+  }
+
+  deleteEquip() {
+    this.confirmEquip = false;
+    this.character.equipments = this.character.equipments.filter(e => e.name != this.equipSelected.name);
+    this.alertService.openPanel({ state: true, type: 'sucess', message: 'Equipamento perdido para sempre' });
+  }
+
+  setAbili(a: AbilityModel) {
+    if (!this.confirmAbili) {
+      this.confirmAbili = true;
+      this.abiliSelected = a;
+      return;
+    }
+    else if (this.abiliSelected != a) {
+      this.abiliSelected = a;
+      return;
+    }
+    this.confirmAbili = false;
+  }
+
+  deleteAbili() {
+    this.confirmAbili = false;
+    this.character.abilities = this.character.abilities.filter(e => e.name != this.abiliSelected.name);
+    this.alertService.openPanel({ state: true, type: 'sucess', message: 'Habilidade perdida para sempre' });
+  }
 }
