@@ -23,6 +23,7 @@ import { AddAbilityComponent } from './pages/database/database-add/add-ability/a
 import { AlertComponent } from './components/alert/alert.component';
 import { DatabaseEditComponent } from './pages/database/database-edit/database-edit.component';
 import { EditComponent } from './components/edit/edit.component';
+import { DatabaseDeleteComponent } from './pages/database/database-delete/database-delete.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { EditComponent } from './components/edit/edit.component';
     DatabaseListComponent,
     DatabaseAddComponent,
     DatabaseEditComponent,
+    DatabaseDeleteComponent,
     AddEquipComponent,
     AddAbilityComponent,
     EditComponent,

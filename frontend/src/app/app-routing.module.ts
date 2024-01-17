@@ -7,6 +7,7 @@ import { DatabaseMainComponent } from './pages/database/database-main/database-m
 import { DatabaseListComponent } from './pages/database/database-list/database-list.component';
 import { DatabaseAddComponent } from './pages/database/database-add/database-add.component';
 import { DatabaseEditComponent } from './pages/database/database-edit/database-edit.component';
+import { DatabaseDeleteComponent } from './pages/database/database-delete/database-delete.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,7 @@ const routes: Routes = [
           { path: 'add', component: DatabaseAddComponent },
           { path: 'list', component: DatabaseListComponent },
           { path: 'edit', component: DatabaseEditComponent },
-          { path: 'delete', component: DatabaseListComponent },
+          { path: 'delete', component: DatabaseDeleteComponent },
         ]
       },
     ]

@@ -48,12 +48,12 @@ export class DatabaseEditComponent {
   chars: CharacterModel[] = [];
   enemies: CharacterModel[] = []
 
-  constructor(private db: DatabaseService, private alert:AlertService) {
-    this.db.getAllCharacters().subscribe(c => { this.chars = c; console.log(c) });
+  constructor(private db: DatabaseService, private alert: AlertService) {
+    this.db.getAllCharacters().subscribe(c => this.chars = c);
     this.db.getAllEnemies().subscribe(e => this.enemies = e);
   }
 
-  selectChar(char:CharacterModel) {
+  selectChar(char: CharacterModel) {
     this.char = char;
     this.onEdit = true;
   }
@@ -64,9 +64,9 @@ export class DatabaseEditComponent {
 
   update(c: CharacterModel) {
     this.onEdit = false;
-    this.alert.openPanel({state: true, type: 'alert', message: 'Salvando...'});
+    this.alert.openPanel({ state: true, type: 'alert', message: 'Salvando...' });
     this.db.updateChar(c, this.chars.some(ch => ch.name === c.name)).subscribe(() => {
-      this.alert.openPanel({state: true, type: 'sucess', message: 'Personagem alterado!'});
+      this.alert.openPanel({ state: true, type: 'sucess', message: 'Personagem alterado!' });
     });
   }
 }
