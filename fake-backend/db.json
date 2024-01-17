@@ -456,7 +456,78 @@
       "openMenu": false,
       "unified": true,
       "id": 6
+    },
+    {
+      "name": "Billy",
+      "sex": "M",
+      "race": "Elfo",
+      "class": "Bardo",
+      "level": 1,
+      "life": 60,
+      "currLife": 60,
+      "mana": 60,
+      "currMana": 60,
+      "strength": 4,
+      "agility": 3,
+      "intelligence": 3,
+      "will": 2,
+      "equipments": [],
+      "abilities": [],
+      "block": {
+        "current": 9,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 8,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 13,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 7
     }
   ],
-  "enemies": []
+  "enemies": [
+    {
+      "name": "Gruvakk",
+      "sex": "M",
+      "race": "Orc",
+      "class": "Xamã",
+      "level": 1,
+      "life": 40,
+      "currLife": 60,
+      "mana": 20,
+      "currMana": 60,
+      "strength": 2,
+      "agility": 2,
+      "intelligence": 1,
+      "will": 1,
+      "equipments": [],
+      "abilities": [],
+      "block": {
+        "current": 7,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 7,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 9,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": false,
+      "id": 1
+    }
+  ]
 }

@@ -3,6 +3,7 @@ import { EquipmentModel } from "./equipment-model";
 
 export class CharacterModel {
   // Atributos Pessoais
+  id?: number;
   name: string;
   sex: 'F' | 'M';
   race: string;

@@ -28,4 +28,8 @@ export class DatabaseService {
     return this.http.delete<CharacterModel>(`${this.URL_API}${isPlayable ? 'characters' : 'enemies'}/${id}`);
   }
 
+  public updateChar(char: CharacterModel, isPlayable: boolean): Observable<CharacterModel> {
+    return this.http.put<CharacterModel>(`${this.URL_API}${isPlayable ? 'characters' : 'enemies'}/${char.id}`, char)
+  }
+
 }

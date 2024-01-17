@@ -1,0 +1,31 @@
+<section class="database-edit grid">
+  <div class="grid-6 list">
+    <h2>Personagens</h2>
+    <div class="list-container">
+      <div class="list-scroll">
+
+        <div *ngFor="let c of chars" class="list-item" (click)="selectChar(c)">
+          <div class="list-item-header">
+            <h3>{{c.name}}, {{c.sex | sex:c.unified}} {{c.race}} {{c.class}} <span>Nível {{c.level}}</span></h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="grid-6 list">
+    <h2>Inimigos</h2>
+    <div class="list-container">
+      <div class="list-scroll">
+
+        <div *ngFor="let e of enemies" class="list-item" (click)="selectChar(e)">
+          <div class="list-item-header">
+            <h3>{{e.name}}, {{e.sex | sex:e.unified}} {{e.race}} {{e.class}}</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <app-edit *ngIf="onEdit" [character]="char" (cancel)="cancel()" (updatedChar)="update($event)"></app-edit>
+</section>

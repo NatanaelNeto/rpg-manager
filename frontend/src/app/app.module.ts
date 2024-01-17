@@ -21,6 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { AddEquipComponent } from './pages/database/database-add/add-equip/add-equip.component';
 import { AddAbilityComponent } from './pages/database/database-add/add-ability/add-ability.component';
 import { AlertComponent } from './components/alert/alert.component';
+import { DatabaseEditComponent } from './pages/database/database-edit/database-edit.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +36,10 @@ import { AlertComponent } from './components/alert/alert.component';
     DatabaseMainComponent,
     DatabaseListComponent,
     DatabaseAddComponent,
+    DatabaseEditComponent,
     AddEquipComponent,
     AddAbilityComponent,
+    EditComponent,
     SexPipe
   ],
   imports: [
