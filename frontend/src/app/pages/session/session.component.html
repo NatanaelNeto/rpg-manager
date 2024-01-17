@@ -1,32 +1,44 @@
 <section class="session">
-  <app-session-sidebar></app-session-sidebar>
+  <app-session-sidebar (onSelectChar)="setMainChar($event)"></app-session-sidebar>
   <div class="session-content">
     <div class="session-content-main-info grid">
-      <div class="grid-6 grid">
+      <div class="grid-4 grid">
         <div class="level grid-2">
           <p class="bordered">3</p>
         </div>
         <div class="name grid-10">
-          <h3>Borges Pattlefort</h3>
-          <p>O Centauro Bárbaro</p>
+          <h3>{{char.name}}</h3>
+          <p>{{char.sex | sex:char.unified}} {{char.race}} {{char.class}}</p>
         </div>
       </div>
-      <div class="grid-6 grid">
-        <div class="attribute grid-3">
-          <div class="value bordered green">5</div>
+      <div class="grid-8 special-grid">
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.strength)}}">{{char.strength}}</div>
           <p>Força</p>
         </div>
-        <div class="attribute grid-3">
-          <div class="value bordered green">4</div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.agility)}}">{{char.agility}}</div>
           <p>Agilidade</p>
         </div>
-        <div class="attribute grid-3">
-          <div class="value bordered yellow">3</div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.intelligence)}}">{{char.intelligence}}</div>
           <p>Inteligência</p>
         </div>
-        <div class="attribute grid-3">
-          <div class="value bordered red">2</div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.will)}}">{{char.will}}</div>
           <p>Vontade</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.block.current)}}">{{char.block.current}}</div>
+          <p>Bloqueio</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.dodge.current)}}">{{char.dodge.current}}</div>
+          <p>Esquiva</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.determination.current)}}">{{char.determination.current}}</div>
+          <p>Determinação</p>
         </div>
       </div>
     </div>
