@@ -1,0 +1,136 @@
+<section class="session">
+  <app-session-sidebar [scene]="currScene.scene" (onSelectChar)="setMainChar($event)"
+    (onSceneEdit)="editScene($event)"></app-session-sidebar>
+  <div class="session-content">
+    <div class="session-content-main-info grid">
+      <div class="grid-4 grid">
+        <div class="level grid-2">
+          <p class="bordered">{{char.level}}</p>
+        </div>
+        <div class="name grid-10">
+          <h3>{{char.name}}</h3>
+          <p>{{char.sex | sex:char.unified}} {{char.race}} {{char.class}}</p>
+        </div>
+      </div>
+      <div class="grid-8 special-grid">
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.strength)}}">{{char.strength}}</div>
+          <p>Força</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.agility)}}">{{char.agility}}</div>
+          <p>Agilidade</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.intelligence)}}">{{char.intelligence}}</div>
+          <p>Inteligência</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.will)}}">{{char.will}}</div>
+          <p>Vontade</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.block.current)}}">{{char.block.current}}</div>
+          <p>Bloqueio</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.dodge.current)}}">{{char.dodge.current}}</div>
+          <p>Esquiva</p>
+        </div>
+        <div class="attribute">
+          <div class="value bordered {{setBackClass(char.determination.current)}}">{{char.determination.current}}</div>
+          <p>Determinação</p>
+        </div>
+      </div>
+    </div>
+    <div class="session-content-details grid">
+      <div class="column grid-5">
+        <h3>Equipamentos e Itens</h3>
+        <div class="content">
+          <ul>
+            <li *ngFor="let equip of char.equipments">
+              <h4>{{equip.name}}</h4>
+              <p><span class="brutal">Descrição: </span>{{equip.description}}</p>
+              <p><span class="brutal">Preço: </span>{{equip.price}}</p>
+              <p><span class="brutal">Tipo: </span>{{equip.type}}</p>
+              <p><span class="brutal">Força necessária: </span>{{equip.fn}}</p>
+              <p><span class="brutal">Dano: </span>{{equip.damage}}</p>
+              <p><span class="brutal">Efeitos: </span>{{equip.effects}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column grid-5">
+        <h3>Habilidades</h3>
+        <div class="content">
+          <ul>
+            <li *ngFor="let abili of char.abilities">
+              <h4>{{abili.name}} ({{abili.type}})</h4>
+              <p><span class="brutal">Descrição: </span>{{abili.description}}</p>
+              <p><span class="brutal">Custo: </span>{{abili.cost}}</p>
+              <p><span class="brutal">Dificuldade: </span>{{abili.diff}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-2 counters">
+        <div class="counter">
+          <div class="display green bordered">{{char.currLife}}</div>
+          <div class="display-tools">
+            <div class="display-tools-take">
+              <button class="btn red bordered" (click)="setLife(-10)">-10</button>
+            </div>
+            <div class="display-tools-take">
+              <button class="btn red bordered" (click)="setLife(-1)">-1</button>
+            </div>
+            <div class="display-tools-give">
+              <button class="btn green bordered" (click)="setLife(1)">+1</button>
+            </div>
+            <div class="display-tools-give">
+              <button class="btn green bordered" (click)="setLife(10)">+10</button>
+            </div>
+          </div>
+          <p><span class="brutal">vida</span></p>
+        </div>
+        <div class="counter">
+          <div class="display orange bordered">{{char.currMana}}</div>
+          <div class="display-tools">
+            <div class="display-tools-take">
+              <button class="btn red bordered" (click)="setMana(-10)">-10</button>
+            </div>
+            <div class="display-tools-take">
+              <button class="btn red bordered" (click)="setMana(-1)">-1</button>
+            </div>
+            <div class="display-tools-give">
+              <button class="btn green bordered" (click)="setMana(1)">+1</button>
+            </div>
+            <div class="display-tools-give">
+              <button class="btn green bordered" (click)="setMana(10)">+10</button>
+            </div>
+          </div>
+          <p><span class="brutal">mana</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="session-content-tools grid">
+      <div class="grid-3 session-content-tools-name">
+        <select [(ngModel)]="currScene" [disabled]="scenes.length == 0">
+          <option [ngValue]="s" *ngFor="let s of scenes">{{s.name}}</option>
+        </select>
+        <input placeholder="Título da Cena" [(ngModel)]="currScene.name">
+      </div>
+      <div class="grid-3">
+        <button class="btn save bordered" (click)="saveScene()">Salvar cena</button>
+      </div>
+      <div class="grid-3">
+        <button class="btn add bordered" (click)="createNewScene()">Nova cena</button>
+      </div>
+      <div class="grid-3">
+        <button class="btn edit bordered" [disabled]="char.name.length == 0" (click)="toEdit = true">Editar
+          Personagem</button>
+      </div>
+    </div>
+  </div>
+  <app-edit [character]="char" *ngIf="toEdit && char" (cancel)="toEdit = false"
+    (updatedChar)="editedChar($event)"></app-edit>
+</section>

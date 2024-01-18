@@ -1,0 +1,38 @@
+.database-main {
+  height: 100%;
+
+  .grid-3 {
+    height: 100%;
+    border-right: 3px solid var(--brutal_black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 32px;
+    text-transform: lowercase;
+
+    &:nth-child(1) {
+      background-color: var(--brutal_blue);
+      color: var(--brutal_black);
+    }
+    &:nth-child(2) {
+      background-color: var(--brutal_green);
+      color: var(--brutal_black);
+    }
+    &:nth-child(3) {
+      background-color: var(--brutal_yellow);
+      color: var(--brutal_black);
+    }
+    &:nth-child(4) {
+      background-color: var(--brutal_red);
+      color: var(--brutal_black);
+      border-right: none;
+    }
+
+    &:hover {
+      background-color: var(--brutal_black);
+      color: var(--brutal_white);
+    }
+  }
+}

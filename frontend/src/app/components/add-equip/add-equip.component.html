@@ -1,0 +1,38 @@
+<section class="add-equip bordered shaded">
+  <h2>Adicionar Equipamento</h2>
+  <div class="grid">
+    <div class="grid-4">
+      <input type="text" placeholder="Nome" [(ngModel)]="equip.name">
+    </div>
+    <div class="grid-3">
+      <input type="text" placeholder="Tipo" [(ngModel)]="equip.type">
+    </div>
+    <div class="inline grid-3">
+      <input type="text" placeholder="Preço" [(ngModel)]="equip.price">
+    </div>
+    <div class="inline grid-2">
+      <p>FN: </p>
+      <input type="number" [(ngModel)]="equip.fn">
+    </div>
+    <div class="grid-12">
+      <textarea placeholder="Descrição" [(ngModel)]="equip.description"></textarea>
+    </div>
+    <div class="grid-10">
+      <input type="text" placeholder="Efeitos" [(ngModel)]="equip.effects">
+    </div>
+    <div class="grid-2">
+      <input type="text" placeholder="Dano" [(ngModel)]="equip.damage">
+    </div>
+    <div class="grid-6">
+      <button class="add-btn btn bordered" (click)="addEquipment()">
+        Adicionar
+      </button>
+    </div>
+    <div class="grid-6">
+      <button class="cancel-btn btn bordered" (click)="cancelEquipment()">
+        Cancelar
+      </button>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<section class="sidebar">
+  <div class="sidebar-list">
+    <h2>Cena</h2>
+    <div class="sidebar-list-scroll">
+      <div class="sidebar-list-item grid" *ngFor="let c of getOrderedScene()" (click)="setChar(c.char)">
+        <div class="grid-2 sidebar-list-item-init">
+          <p class="bordered init-{{c.init}}">{{c.init}}</p>
+        </div>
+        <div class="grid-8">
+          <p>{{c.char.name}}, {{c.char.sex | sex:c.char.unified}} {{c.char.race}} {{c.char.class}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-tools grid">
+    <div class="grid-6">
+      <button class="btn bordered" (click)="toSelect = true">+</button>
+    </div>
+    <div class="grid-6">
+      <button class="btn bordered" (click)="removeSelectedChar()">-</button>
+    </div>
+  </div>
+  <app-add-to-party *ngIf="toSelect" (cancel)="cancelSelect()" (selectedChar)="addChar($event)"></app-add-to-party>
+</section>

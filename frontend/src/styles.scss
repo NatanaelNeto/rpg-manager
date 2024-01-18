@@ -1,0 +1,199 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Urbanist:ital,wght@0,900;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --brutal_black: black;
+  --brutal_grey: #f3f3f3;
+  --brutal_white: white;
+
+  --brutal_blue: #3df;
+  --brutal_orange: #fb4;
+  --brutal_red: #f55;
+  --brutal_yellow: #ff0;
+  --brutal_green: #0f7;
+  --brutal_purple: #d7f;
+
+  --brutal_l_blue: hsl(190, 100%, 85%);
+  --brutal_l_orange: hsl(38, 100%, 88%);
+  --brutal_l_red: hsl(0, 100%, 92%);
+  --brutal_l_yellow: hsl(60, 100%, 75%);
+  --brutal_l_green: hsl(148, 100%, 75%);
+  --brutal_l_purple: hsl(285, 100%, 98%);
+}
+
+h1,
+h2,
+h3,
+h4,
+span.brutal {
+  font-family: 'Urbanist', sans-serif
+}
+
+h1 {
+  font-size: 48px
+}
+
+h2 {
+  font-size: 36px
+}
+
+h3 {
+  font-size: 24px
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p,
+span {
+  font-size: 20px
+}
+
+.text-little-size {
+  font-size: 14px
+}
+
+.bordered {
+  border: 3px solid var(--brutal_black);
+}
+
+.shaded {
+  box-shadow: 4px 4px 0px var(--brutal_black);
+}
+
+.radius-1 {
+  border-radius: 4px;
+}
+
+.radius-2 {
+  border-radius: 8px;
+}
+
+.radius-3 {
+  border-radius: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+.grid-1 {
+  grid-column-start: span 1;
+}
+
+.grid-2 {
+  grid-column-start: span 2;
+}
+
+.grid-3 {
+  grid-column-start: span 3;
+}
+
+.grid-4 {
+  grid-column-start: span 4;
+}
+
+.grid-5 {
+  grid-column-start: span 5;
+}
+
+.grid-6 {
+  grid-column-start: span 6;
+}
+
+.grid-7 {
+  grid-column-start: span 7;
+}
+
+.grid-8 {
+  grid-column-start: span 8;
+}
+
+.grid-9 {
+  grid-column-start: span 9;
+}
+
+.grid-10 {
+  grid-column-start: span 10;
+}
+
+.grid-11 {
+  grid-column-start: span 11;
+}
+
+.grid-12 {
+  grid-column-start: span 12;
+}
+
+.btn {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Urbanist', sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--brutal_black) !important;
+    color: var(--brutal_white) !important;
+  }
+}
+
+.green {
+  background-color: var(--brutal_green);
+}
+
+.yellow {
+  background-color: var(--brutal_yellow);
+}
+
+.red {
+  background-color: var(--brutal_red);
+}
+
+.blue {
+  background-color: var(--brutal_blue);
+}
+
+.orange {
+  background-color: var(--brutal_orange);
+}
+
+.purple {
+  background-color: var(--brutal_purple);
+}
+
+input,
+select,
+textarea {
+  border: 3px solid var(--brutal_black);
+  width: 100%;
+  padding: 3px;
+
+  &:focus {
+    border: 3px solid var(--brutal_blue);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
