@@ -46,6 +46,8 @@ export class SessionComponent {
   chars: CharacterModel[] = [];
   enemies: CharacterModel[] = [];
 
+  toEdit: boolean;
+
   constructor(private db: DatabaseService, private alert: AlertService) {
     this.db.getAllCharacters().subscribe(c => this.chars = c);
     this.db.getAllEnemies().subscribe(e => this.enemies = e);
@@ -86,6 +88,11 @@ export class SessionComponent {
     else {
       this.char.currMana += value;
     }
+    this.updateDB();
+  }
+
+  editedChar(c: CharacterModel) {
+    this.char = c;
     this.updateDB();
   }
 

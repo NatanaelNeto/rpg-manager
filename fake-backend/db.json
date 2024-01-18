@@ -458,7 +458,7 @@
       "id": 6
     },
     {
-      "name": "Billy",
+      "name": "Billy Brado",
       "sex": "M",
       "race": "Elfo",
       "class": "Bardo",
@@ -491,6 +491,41 @@
       "openMenu": false,
       "unified": true,
       "id": 7
+    },
+    {
+      "name": "Barney Burgo",
+      "sex": "M",
+      "race": "Fauno",
+      "class": "Bardo",
+      "level": 2,
+      "life": 40,
+      "currLife": 40,
+      "mana": 40,
+      "currMana": 40,
+      "strength": 2,
+      "agility": 3,
+      "intelligence": 4,
+      "will": 5,
+      "equipments": [],
+      "abilities": [],
+      "block": {
+        "current": 7,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 8,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 13,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 8
     }
   ],
   "enemies": [

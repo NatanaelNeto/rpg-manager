@@ -1,0 +1,26 @@
+<section class="add-to-party bordered grid">
+<div class="grid-6 column">
+  <h2>Personagens</h2>
+  <div class="column-scroll">
+    <div (click)="selectChar(c)" class="column-item {{char.char.name == c.name ? 'selected' : ''}}" *ngFor="let c of chars">
+      <h3>{{c.name}}, {{c.sex | sex:c.unified}} {{c.race}} {{c.class}}</h3>
+    </div>
+  </div>
+</div>
+<div class="grid-6 column">
+  <h2>Inimigos</h2>
+  <div class="column-scroll">
+    <div (click)="selectChar(e)" class="column-item {{char.char.name == e.name ? 'selected' : ''}}" *ngFor="let e of enemies">
+      <h3>{{e.name}}, {{e.sex | sex:e.unified}} {{e.race}} {{e.class}}</h3>
+    </div>
+  </div>
+</div>
+<div class="grid-12 grid">
+  <div class="grid-4">
+    <p class="brutal">Iniciativa:</p>
+    <input type="number" min="1" max="20" [(ngModel)]="char.init">
+  </div>
+  <div class="grid-4"><button class="btn bordered" (click)="emitChar()">Adicionar</button></div>
+  <div class="grid-4"><button class="btn bordered" (click)="emitCancel()">Cancelar</button></div>
+</div>
+</section>

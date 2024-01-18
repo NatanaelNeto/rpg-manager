@@ -113,8 +113,9 @@
     </div>
     <div class="session-content-tools grid green">
       <button class="btn add bordered">adicionar</button>
-      <button class="btn edit bordered">editar</button>
+      <button class="btn edit bordered" (click)="toEdit = true">editar</button>
       <button class="btn remove bordered">remover</button>
     </div>
   </div>
+  <app-edit [character]="char" *ngIf="toEdit" (cancel)="toEdit = false" (updatedChar)="editedChar($event)"></app-edit>
 </section>

@@ -14,10 +14,11 @@
   </div>
   <div class="sidebar-tools grid">
     <div class="grid-6">
-      <button class="btn bordered">+</button>
+      <button class="btn bordered" (click)="toSelect = true">+</button>
     </div>
     <div class="grid-6">
-      <button class="btn bordered">-</button>
+      <button class="btn bordered" (click)="removeSelectedChar()">-</button>
     </div>
   </div>
+  <app-add-to-party *ngIf="toSelect" (cancel)="cancelSelect()" (selectedChar)="addChar($event)"></app-add-to-party>
 </section>

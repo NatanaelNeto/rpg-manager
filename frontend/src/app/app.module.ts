@@ -24,6 +24,7 @@ import { AlertComponent } from './components/alert/alert.component';
 import { DatabaseEditComponent } from './pages/database/database-edit/database-edit.component';
 import { EditComponent } from './components/edit/edit.component';
 import { DatabaseDeleteComponent } from './pages/database/database-delete/database-delete.component';
+import { AddToPartyComponent } from './components/session-sidebar/addToParty/addToParty.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DatabaseDeleteComponent } from './pages/database/database-delete/databa
     MainComponent,
     NavbarComponent,
     AlertComponent,
+    AddToPartyComponent,
     SessionComponent,
     SessionSidebarComponent,
     DatabaseComponent,
