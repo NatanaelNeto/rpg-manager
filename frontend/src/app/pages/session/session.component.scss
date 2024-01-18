@@ -168,21 +168,27 @@
     }
 
     &-tools {
-      background-color: var(--brutal_green);
+      background-color: var(--brutal_purple);
       padding: 10px;
       border-top: 3px solid var(--brutal_black);
-      display: flex;
-      justify-content: flex-end;
+
+      &.grid {
+        gap: 10px;
+      }
+
 
       button {
         margin-right: 10px;
+
+        height: 100%;
+        width: 100%;
 
         &:last-child {
           margin-right: 0;
         }
 
         &.add {
-          background-color: var(--brutal_blue);
+          background-color: var(--brutal_green);
           color: var(--brutal_l_yellow);
         }
 
@@ -191,9 +197,15 @@
           color: var(--brutal_black);
         }
 
-        &.remove {
-          background-color: var(--brutal_red);
-          color: var(--brutal_l_orange);
+        &.save {
+          background-color: var(--brutal_blue);
+          color: var(--brutal_l_yellow);
+        }
+      }
+
+      &-name {
+        select {
+          margin-bottom: 10px;
         }
       }
     }

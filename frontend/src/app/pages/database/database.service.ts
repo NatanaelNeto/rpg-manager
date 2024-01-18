@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { CharacterModel } from 'src/app/models/character-model';
 import { Observable, catchError, throwError } from 'rxjs';
+import { SceneModel } from 'src/app/models/scene-model';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +31,22 @@ export class DatabaseService {
 
   public updateChar(char: CharacterModel, isPlayable: boolean): Observable<CharacterModel> {
     return this.http.put<CharacterModel>(`${this.URL_API}${isPlayable ? 'characters' : 'enemies'}/${char.id}`, char)
+  }
+
+  public getAllScenes(): Observable<SceneModel[]> {
+    return this.http.get<SceneModel[]>(`${this.URL_API}scenes`);
+  }
+
+  public addScene(scene: SceneModel): Observable<SceneModel> {
+    return this.http.post<SceneModel>(`${this.URL_API}scenes`, scene);
+  }
+
+  public deleteScene(sceneId: number): Observable<SceneModel> {
+    return this.http.delete<SceneModel>(`${this.URL_API}scenes/${sceneId}`);
+  }
+
+  public updateScene(scene: SceneModel): Observable<SceneModel> {
+    return this.http.put<SceneModel>(`${this.URL_API}scenes/${scene.id}`, scene);
   }
 
 }

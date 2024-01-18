@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CharacterModel } from 'src/app/models/character-model';
 import { SceneOrder } from 'src/app/models/scene-order-model';
 import { AlertService } from '../alert/alert.service';
@@ -10,252 +10,10 @@ import { AlertService } from '../alert/alert.service';
 })
 
 export class SessionSidebarComponent {
+  @Input() scene: SceneOrder[] = [];
+
   @Output() onSelectChar: EventEmitter<CharacterModel> = new EventEmitter<CharacterModel>();
-  scene: SceneOrder[] = [];
-
-  /*
-  scene: SceneOrder[] = [
-    {
-      init: 1,
-      char: {
-        "name": "Lyra Tuk",
-        "sex": "F",
-        "race": "Levent",
-        "class": "Paladina",
-        "level": 1,
-        "life": 60,
-        "currLife": 60,
-        "mana": 60,
-        "currMana": 60,
-        "strength": 3,
-        "agility": 3,
-        "intelligence": 3,
-        "will": 4,
-        "equipments": [],
-        "abilities": [
-          {
-            "name": "Asas Ancestrais",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "Voa e plana. Não pode parar em voo. Encontrão causa o dobro de dano,"
-          },
-          {
-            "name": "Mestra de Armas I",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "+3 de dano ao atacar"
-          },
-          {
-            "name": "Código da Lealdadde",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "Não pode atacar um combatente por um fio. Não permite lutas injustas. Não trai e não aceita traição. Recupera o dobro de PV e PM"
-          },
-          {
-            "name": "Combate Tático",
-            "type": "Reação",
-            "cost": "-",
-            "requisites": "",
-            "diff": 0,
-            "description": "Derrotar um oponente com um ataque corporal permite outro ataque (sem custos)"
-          },
-          {
-            "name": "Justiça Final I",
-            "type": "Ação",
-            "cost": "25 de mana",
-            "requisites": "-",
-            "diff": 0,
-            "description": "O ataque causa o dobro de dano (triplo para mortos-vivos, infernais, espíritos ou espectros)"
-          }
-        ],
-        "block": {
-          "current": 8,
-          "armorBonus": 0,
-          "blockBonus": 0
-        },
-        "dodge": {
-          "current": 8,
-          "armorBonus": 0,
-          "dodgeBonus": 0
-        },
-        "determination": {
-          "current": 12,
-          "armorBonus": 0,
-          "determinationBonus": 0
-        },
-        "openMenu": false,
-        "unified": true,
-        "id": 1
-      },
-    },
-    {
-      init: 18,
-      char: {
-        "name": "Lyra Tuk Teste",
-        "sex": "F",
-        "race": "Levent",
-        "class": "Paladina",
-        "level": 1,
-        "life": 60,
-        "currLife": 60,
-        "mana": 60,
-        "currMana": 60,
-        "strength": 3,
-        "agility": 3,
-        "intelligence": 3,
-        "will": 4,
-        "equipments": [],
-        "abilities": [
-          {
-            "name": "Asas Ancestrais",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "Voa e plana. Não pode parar em voo. Encontrão causa o dobro de dano,"
-          },
-          {
-            "name": "Mestra de Armas I",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "+3 de dano ao atacar"
-          },
-          {
-            "name": "Código da Lealdadde",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "Não pode atacar um combatente por um fio. Não permite lutas injustas. Não trai e não aceita traição. Recupera o dobro de PV e PM"
-          },
-          {
-            "name": "Combate Tático",
-            "type": "Reação",
-            "cost": "-",
-            "requisites": "",
-            "diff": 0,
-            "description": "Derrotar um oponente com um ataque corporal permite outro ataque (sem custos)"
-          },
-          {
-            "name": "Justiça Final I",
-            "type": "Ação",
-            "cost": "25 de mana",
-            "requisites": "-",
-            "diff": 0,
-            "description": "O ataque causa o dobro de dano (triplo para mortos-vivos, infernais, espíritos ou espectros)"
-          }
-        ],
-        "block": {
-          "current": 8,
-          "armorBonus": 0,
-          "blockBonus": 0
-        },
-        "dodge": {
-          "current": 8,
-          "armorBonus": 0,
-          "dodgeBonus": 0
-        },
-        "determination": {
-          "current": 12,
-          "armorBonus": 0,
-          "determinationBonus": 0
-        },
-        "openMenu": false,
-        "unified": true,
-        "id": 1
-      },
-    },
-    {
-      init: 7,
-      char: {
-        "name": "Lyra Tuk Outro Teste",
-        "sex": "F",
-        "race": "Levent",
-        "class": "Paladina",
-        "level": 1,
-        "life": 60,
-        "currLife": 60,
-        "mana": 60,
-        "currMana": 60,
-        "strength": 3,
-        "agility": 3,
-        "intelligence": 3,
-        "will": 4,
-        "equipments": [],
-        "abilities": [
-          {
-            "name": "Asas Ancestrais",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "Voa e plana. Não pode parar em voo. Encontrão causa o dobro de dano,"
-          },
-          {
-            "name": "Mestra de Armas I",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "+3 de dano ao atacar"
-          },
-          {
-            "name": "Código da Lealdadde",
-            "type": "Suporte",
-            "cost": "-",
-            "requisites": "-",
-            "diff": 0,
-            "description": "Não pode atacar um combatente por um fio. Não permite lutas injustas. Não trai e não aceita traição. Recupera o dobro de PV e PM"
-          },
-          {
-            "name": "Combate Tático",
-            "type": "Reação",
-            "cost": "-",
-            "requisites": "",
-            "diff": 0,
-            "description": "Derrotar um oponente com um ataque corporal permite outro ataque (sem custos)"
-          },
-          {
-            "name": "Justiça Final I",
-            "type": "Ação",
-            "cost": "25 de mana",
-            "requisites": "-",
-            "diff": 0,
-            "description": "O ataque causa o dobro de dano (triplo para mortos-vivos, infernais, espíritos ou espectros)"
-          }
-        ],
-        "block": {
-          "current": 8,
-          "armorBonus": 0,
-          "blockBonus": 0
-        },
-        "dodge": {
-          "current": 8,
-          "armorBonus": 0,
-          "dodgeBonus": 0
-        },
-        "determination": {
-          "current": 12,
-          "armorBonus": 0,
-          "determinationBonus": 0
-        },
-        "openMenu": false,
-        "unified": true,
-        "id": 1
-      },
-    },
-
-  ];
-
-  */
+  @Output() onSceneEdit: EventEmitter<SceneOrder[]> = new EventEmitter<SceneOrder[]>();
 
   toSelect: boolean = false;
 
@@ -273,12 +31,13 @@ export class SessionSidebarComponent {
   }
 
   removeSelectedChar() {
-    if(this.selectedChar) {
+    if (this.selectedChar) {
       this.scene = this.scene.filter(c => c.char.name != this.selectedChar.name);
-      this.alert.openPanel({state: true, type:'sucess', message: `${this.selectedChar.name} foi jogado no mar do esquecimento`});
+      this.onSceneEdit.emit(this.scene);
+      this.alert.openPanel({ state: true, type: 'sucess', message: `${this.selectedChar.name} foi jogado no mar do esquecimento` });
     }
     else {
-      this.alert.openPanel({state: true, type:'error', message: 'Ninguém pra ser excluído da rodinha'});
+      this.alert.openPanel({ state: true, type: 'error', message: 'Ninguém pra ser excluído da rodinha' });
     }
   }
 
@@ -289,6 +48,7 @@ export class SessionSidebarComponent {
   addChar(char: SceneOrder) {
     this.scene.push(char);
     this.toSelect = false;
-    this.alert.openPanel({state: true, type:'sucess', message:`Prepare-se para a encrenca, ${char.char.name}!`});
+    this.onSceneEdit.emit(this.scene);
+    this.alert.openPanel({ state: true, type: 'sucess', message: `Prepare-se para a encrenca, ${char.char.name}!` });
   }
 }
