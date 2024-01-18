@@ -52,7 +52,7 @@
 
         <div *ngFor="let e of enemies" class="list-item">
           <div class="list-item-header">
-            <h3>{{e.name}}, {{e.sex | sex:e.unified}} {{e.race}} {{e.class}}</h3>
+            <h3>{{e.name}}, {{e.sex | sex:e.unified}} {{e.race}} {{e.class}} <span>Nível {{e.level}}</span></h3>
             <mat-icon class="list-item-card-drop {{e.openMenu ? '' : 'close'}}"
               (click)="e.openMenu = !e.openMenu">arrow_drop_up</mat-icon>
           </div>
@@ -63,7 +63,7 @@
                 </span>{{e.currLife}}</p>
               <p><span class="brutal">Mana máxima: </span>{{e.mana}} | <span class="brutal">Mana atual:
                 </span>{{e.currMana}}</p>
-              <p><span class="brutal">Nível: </span>{{e.level}}</p>
+              <p><span class="brutal">Bloqueio: </span>{{e.block.current}} | <span class="brutal">Esquiva: </span>{{e.dodge.current}} | <span class="brutal">Determinação: </span>{{e.determination.current}}</p>
               <p><span class="brutal">Força: </span>{{e.strength}} | <span class="brutal">Agilidade:
                 </span>{{e.agility}} | <span class="brutal">Inteligência: </span>{{e.intelligence}} | <span
                   class="brutal">Vontade: </span>{{e.will}}</p>

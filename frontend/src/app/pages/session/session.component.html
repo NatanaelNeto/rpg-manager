@@ -4,7 +4,7 @@
     <div class="session-content-main-info grid">
       <div class="grid-4 grid">
         <div class="level grid-2">
-          <p class="bordered">3</p>
+          <p class="bordered">{{char.level}}</p>
         </div>
         <div class="name grid-10">
           <h3>{{char.name}}</h3>
@@ -44,88 +44,67 @@
     </div>
     <div class="session-content-details grid">
       <div class="column grid-5">
-        <h3>Habilidades</h3>
+        <h3>Equipamentos e Itens</h3>
         <div class="content">
           <ul>
-            <li>
-              <h4>Nome da Habilidade 1</h4>
-              <p><span class="brutal">Estilo:</span> Ação</p>
-              <p><span class="brutal">Descrição:</span> Alguma descrição legal da habilidade aqui</p>
-              <p><span class="brutal">Custo:</span> 10 de mana</p>
-            </li>
-            <li>
-              <h4>Nome da Habilidade 1</h4>
-              <p><span class="brutal">Estilo:</span> Ação</p>
-              <p><span class="brutal">Descrição:</span> Alguma descrição legal da habilidade aqui</p>
-              <p><span class="brutal">Custo:</span> 10 de mana</p>
-            </li>
-            <li>
-              <h4>Nome da Habilidade 1</h4>
-              <p><span class="brutal">Estilo:</span> Ação</p>
-              <p><span class="brutal">Descrição:</span> Alguma descrição legal da habilidade aqui</p>
-              <p><span class="brutal">Custo:</span> 10 de mana</p>
+            <li *ngFor="let equip of char.equipments">
+              <h4>{{equip.name}}</h4>
+              <p><span class="brutal">Descrição: </span>{{equip.description}}</p>
+              <p><span class="brutal">Preço: </span>{{equip.price}}</p>
+              <p><span class="brutal">Tipo: </span>{{equip.type}}</p>
+              <p><span class="brutal">Força necessária: </span>{{equip.fn}}</p>
+              <p><span class="brutal">Dano: </span>{{equip.damage}}</p>
+              <p><span class="brutal">Efeitos: </span>{{equip.effects}}</p>
             </li>
           </ul>
         </div>
       </div>
       <div class="column grid-5">
-        <h3>Equipamentos e Itens</h3>
+        <h3>Habilidades</h3>
         <div class="content">
           <ul>
-            <li>
-              <h4>Nome do Equipamento 1</h4>
-              <p><span class="brutal">Tipo:</span> Escudo</p>
-              <p><span class="brutal">Descrição:</span> Alguma descrição legal do equipamento aqui</p>
-              <p><span class="brutal">Detalhes:</span> Ocupa uma mão</p>
-            </li>
-            <li>
-              <h4>Nome do Equipamento 1</h4>
-              <p><span class="brutal">Tipo:</span> Escudo</p>
-              <p><span class="brutal">Descrição:</span> Alguma descrição legal do equipamento aqui</p>
-              <p><span class="brutal">Detalhes:</span> Ocupa uma mão</p>
-            </li>
-            <li>
-              <h4>Nome do Equipamento 1</h4>
-              <p><span class="brutal">Tipo:</span> Escudo</p>
-              <p><span class="brutal">Descrição:</span> Alguma descrição legal do equipamento aqui</p>
-              <p><span class="brutal">Detalhes:</span> Ocupa uma mão</p>
+            <li *ngFor="let abili of char.abilities">
+              <h4>{{abili.name}} ({{abili.type}})</h4>
+              <p><span class="brutal">Descrição: </span>{{abili.description}}</p>
+              <p><span class="brutal">Custo: </span>{{abili.cost}}</p>
+              <p><span class="brutal">Dificuldade: </span>{{abili.diff}}</p>
             </li>
           </ul>
         </div>
       </div>
       <div class="grid-2 counters">
         <div class="counter">
-          <div class="display green bordered">60</div>
+          <div class="display green bordered">{{char.currLife}}</div>
           <div class="display-tools">
             <div class="display-tools-take">
-              <button class="btn red bordered">-10</button>
+              <button class="btn red bordered" (click)="setLife(-10)">-10</button>
             </div>
             <div class="display-tools-take">
-              <button class="btn red bordered">-1</button>
+              <button class="btn red bordered" (click)="setLife(-1)">-1</button>
             </div>
             <div class="display-tools-give">
-              <button class="btn green bordered">+1</button>
+              <button class="btn green bordered" (click)="setLife(1)">+1</button>
             </div>
             <div class="display-tools-give">
-              <button class="btn green bordered">+10</button>
+              <button class="btn green bordered" (click)="setLife(10)">+10</button>
             </div>
           </div>
           <p><span class="brutal">vida</span></p>
         </div>
         <div class="counter">
-          <div class="display orange bordered">20</div>
+          <div class="display orange bordered">{{char.currMana}}</div>
           <div class="display-tools">
             <div class="display-tools-take">
-              <button class="btn red bordered">-10</button>
+              <button class="btn red bordered" (click)="setMana(-10)">-10</button>
             </div>
             <div class="display-tools-take">
-              <button class="btn red bordered">-1</button>
+              <button class="btn red bordered" (click)="setMana(-1)">-1</button>
             </div>
             <div class="display-tools-give">
-              <button class="btn green bordered">+1</button>
+              <button class="btn green bordered" (click)="setMana(1)">+1</button>
             </div>
             <div class="display-tools-give">
-              <button class="btn green bordered">+10</button>
+              <button class="btn green bordered" (click)="setMana(10)">+10</button>
             </div>
           </div>
           <p><span class="brutal">mana</span></p>
