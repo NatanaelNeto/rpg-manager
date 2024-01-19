@@ -2,6 +2,6 @@
 
 Contendo uma aventura de RPG escrita por Natanael Neto
 
-## Delírios de Rahnesa
+## Delírios de Gleadwin
 
-A Rahnesa está de volta, disposta a levar todos para o domínio de seus delírios. Será que os aventureiros irão conseguir pará-la a tempo?
+A Gleadwin está de volta, disposta a levar todos para o domínio de seus delírios. Será que os aventureiros irão conseguir pará-la a tempo?
