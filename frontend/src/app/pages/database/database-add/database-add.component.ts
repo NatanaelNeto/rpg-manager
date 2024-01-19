@@ -25,25 +25,8 @@ export class DatabaseAddComponent {
     agility: -1,
     intelligence: -1,
     will: -1,
-    equipments: [
-      {
-        name: 'Teste',
-        type: 'Teste',
-        description: 'Teste',
-        price: 'Teste',
-        damage: 'Teste',
-        fn: 100,
-        effects: 'Teste',
-      }
-    ],
-    abilities: [{
-      name: 'Teste 2',
-      type: "Suporte",
-      cost: 'Teste 2',
-      diff: 0,
-      requisites: 'Teste 2',
-      description: 'Teste 2',
-    }],
+    equipments: [],
+    abilities: [],
     block: {
       current: 0,
       armorBonus: -1,
