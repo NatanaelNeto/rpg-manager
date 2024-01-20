@@ -1,12 +1,23 @@
 .sidebar {
   height: 100%;
-  width: 100%;
+  width: 300px;
   border-right: 3px solid var(--brutal_black);
   display: grid;
   grid-template-rows: 1fr auto;
+  overflow: hidden;
+  flex: 1;
 
   &-list {
     border-bottom: 3px solid var(--brutal_black);
+    grid-template-rows: auto 1fr;
+    display: grid;
+    height: 100%;
+    overflow-y: hidden;
+
+    &-scroll {
+      height: 100%;
+      overflow: auto;
+    }
 
     h2 {
       padding: 10px;
@@ -16,6 +27,10 @@
     &-item {
       padding: 10px;
       border-bottom: 3px solid var(--brutal_black);
+
+      &:last-child {
+        border-bottom: none;
+      }
 
       &:hover {
         background-color: var(--brutal_black);
