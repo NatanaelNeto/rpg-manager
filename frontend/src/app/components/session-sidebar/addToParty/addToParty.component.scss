@@ -18,29 +18,6 @@
       display: grid;
       grid-template-rows: auto 1fr;
 
-      /* ===== Scrollbar CSS ===== */
-    /* Firefox */
-    * {
-      scrollbar-width: none;
-      scrollbar-color: #000000 #ffffff;
-    }
-
-    /* Chrome, Edge, and Safari */
-    *::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    *::-webkit-scrollbar-track {
-      background: #ffffff;
-    }
-
-    *::-webkit-scrollbar-thumb {
-      background-color: #000000;
-      border-radius: 0px;
-      border: 0px solid #ffffff;
-    }
-
-
       h2 {
         padding: 10px;
         background-color: var(--brutal_black);
@@ -50,6 +27,7 @@
       &-scroll {
         overflow: auto;
       }
+
       &-item {
         padding: 10px;
         border-bottom: 3px solid var(--brutal_black);
@@ -82,6 +60,7 @@
         margin-right: 10px;
       }
     }
+
     input {
       height: 100%;
       padding: 10px;

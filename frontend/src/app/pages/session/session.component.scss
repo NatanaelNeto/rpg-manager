@@ -1,8 +1,7 @@
 .session {
-  display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: 300px 1fr;
+  display: flex;
 
   &-content {
     display: grid;
@@ -75,28 +74,6 @@
         display: grid;
         grid-template-rows: auto 1fr;
         overflow-y: hidden;
-
-        /* ===== Scrollbar CSS ===== */
-        /* Firefox */
-        * {
-          scrollbar-width: none;
-          scrollbar-color: #000000 #ffffff;
-        }
-
-        /* Chrome, Edge, and Safari */
-        *::-webkit-scrollbar {
-          width: 10px;
-        }
-
-        *::-webkit-scrollbar-track {
-          background: #ffffff;
-        }
-
-        *::-webkit-scrollbar-thumb {
-          background-color: #000000;
-          border-radius: 0px;
-          border: 0px solid #ffffff;
-        }
 
         h3 {
           padding: 10px;
