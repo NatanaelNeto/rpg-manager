@@ -46,6 +46,13 @@ export class SessionSidebarComponent {
   }
 
   addChar(char: SceneOrder) {
+    if (!char.char.unified) {
+      let i = 1;
+      while (this.scene.some(s => s.char.name.endsWith(` ${i}`))) {
+        i += 1;
+      }
+      char.char.name += ` ${i}`;
+    }
     this.scene.push(char);
     this.toSelect = false;
     this.onSceneEdit.emit(this.scene);

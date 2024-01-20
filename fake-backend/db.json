@@ -999,6 +999,11 @@
         }
       ],
       "id": 3
+    },
+    {
+      "name": "Cena 1",
+      "scene": [],
+      "id": 4
     }
   ],
   "characters": [
@@ -1226,7 +1231,7 @@
       "class": "Ladina",
       "level": 1,
       "life": 60,
-      "currLife": 54,
+      "currLife": 60,
       "mana": 60,
       "currMana": 60,
       "strength": 2,
@@ -1772,7 +1777,7 @@
       "class": "Soldado",
       "level": 1,
       "life": 20,
-      "currLife": 6,
+      "currLife": 20,
       "mana": 10,
       "currMana": 10,
       "strength": 3,
