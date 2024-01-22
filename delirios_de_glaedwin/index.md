@@ -80,14 +80,21 @@
 - **Requisito:** Portar, pelo menos, uma espada, Guarda Defletora, nível 5
 - **Descrição:** Você gira rapidamente na sua base com sua espada, usando ela para defletir projéteis ou golpes durante 1 turno. Inimigos ao redor não podem lhe atacar. Inimigos ao redor no momento que você ativar essa habilidade são jogados para trás, recebendo 5 de dano e ficam caídos. Acertos críticos devolvem o dano ao atacante.
 
-### Feiticeiro
+### Paladino
 
-#### Explosão Primordial
+#### Sol da Justiça 1
 
-- **Custo:** 30 de Mana
+- **Custo:** 10 de Mana
+- **Dificuldade:** 10
+- **Requisito:** Portar, pelo menos, uma espada
+- **Descrição:** Aponte sua espada para os céus. Seu Deus lhe retribuirá com Fé, concedendo-lhe +2 de dano por 1d4 turnos.
+
+#### Sol da Justiça 2
+
+- **Custo:** 20 de Mana
 - **Dificuldade:** 12
-- **Requisito:** Portar o Cajado de Gareiv
-- **Descrição:** Causa 20 de dano em um oponente (+10 em caso de acerto crítico). Caso esse dano zere a vida do oponente, ele explode, morrendo imediatamente e aumentando o dano dessa habilidade em 10. (Válido apenas para esse dia)
+- **Requisito:** Portar, pelo menos, uma espada, nível 5
+- **Descrição:** Aponte sua espada para os céus. Seu Deus lhe retribuirá com Fé, concedendo-lhe +4 de dano por 1d4 turnos. Além disso, ao levantar sua espada, um raio cairá no oponente a sua escolha, causando 10 de dano (15 para mortos vivos ou espectros).
 
 ---
 
@@ -188,6 +195,13 @@
 - **Custo:** 10 de Mana
 - **Dificuldade:** 10
 - **Descrição:** Empurre inimigos para longe, atordoando-os por 1 turno. Essa magia causa 10 de dano caso seja lançada muito forte.
+
+### Explosão Primordial
+
+- **Requisito:** Portar o Cajado de Gareiv
+- **Custo:** 30 de Mana
+- **Dificuldade:** 12
+- **Descrição:** Causa 20 de dano em um oponente (+10 em caso de acerto crítico). Caso esse dano zere a vida do oponente, ele explode, morrendo imediatamente e aumentando o dano dessa habilidade em 10. (Válido apenas para esse dia)
 
 ---
 
