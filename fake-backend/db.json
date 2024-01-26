@@ -6,9 +6,9 @@
       "sex": "F",
       "race": "Levent",
       "class": "Paladina",
-      "level": 1,
-      "life": 60,
-      "currLife": 60,
+      "level": 2,
+      "life": 70,
+      "currLife": 70,
       "mana": 60,
       "currMana": 60,
       "strength": 3,
@@ -42,6 +42,15 @@
           "damage": "",
           "fn": 2,
           "effects": ""
+        },
+        {
+          "name": "Armadura Simples",
+          "type": "Armadura",
+          "description": "Defesa +3",
+          "price": "-",
+          "damage": "-",
+          "fn": 0,
+          "effects": "-"
         }
       ],
       "abilities": [
@@ -84,21 +93,29 @@
           "requisites": "-",
           "diff": 0,
           "description": "O ataque causa o dobro de dano (triplo para mortos-vivos, infernais, espíritos ou espectros)"
+        },
+        {
+          "name": "Sem Escapatória",
+          "type": "Reação",
+          "cost": "-",
+          "requisites": "Combate Tático",
+          "diff": 0,
+          "description": "Pode realizar um ataque caso um oponente por perto tente se levantar ou fugir. Se acertar, além do dano do ataque, o oponente perderá seu próximo turno."
         }
       ],
       "block": {
-        "current": 12,
-        "armorBonus": "02",
+        "current": 13,
+        "armorBonus": "3",
         "blockBonus": 2
       },
       "dodge": {
-        "current": 10,
-        "armorBonus": "02",
+        "current": 11,
+        "armorBonus": "3",
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 14,
-        "armorBonus": "02",
+        "current": 15,
+        "armorBonus": "3",
         "determinationBonus": 0
       },
       "openMenu": false,
@@ -110,11 +127,11 @@
       "sex": "M",
       "race": "Humano",
       "class": "Feiticeiro",
-      "level": 1,
+      "level": 2,
       "life": 60,
       "currLife": 60,
-      "mana": 60,
-      "currMana": 60,
+      "mana": 70,
+      "currMana": 70,
       "strength": 3,
       "agility": 3,
       "intelligence": 5,
@@ -197,6 +214,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Tem uma coruja"
+        },
+        {
+          "name": "Bola de Fogo",
+          "type": "Ação",
+          "cost": "20",
+          "requisites": "Inflamar",
+          "diff": 12,
+          "description": "Causa 20 de dano de fogo em um alvo e 10 de dano de fogo em inimigos adjacentes ao alvo."
         }
       ],
       "block": {
@@ -223,11 +248,11 @@
       "sex": "F",
       "race": "Faen",
       "class": "Ladina",
-      "level": 1,
-      "life": 60,
-      "currLife": 60,
-      "mana": 60,
-      "currMana": 60,
+      "level": 2,
+      "life": 70,
+      "currLife": 70,
+      "mana": 65,
+      "currMana": 65,
       "strength": 2,
       "agility": 5,
       "intelligence": 4,
@@ -301,6 +326,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Consegue furtar bolsas e arrombar portas. Rola 3d6 em testes de furtividade ou deslocamento."
+        },
+        {
+          "name": "Herança Feérica",
+          "type": "Suporte",
+          "cost": "",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Imune a efeitos mentais. Detecta ilusões imediatamente. +5 de mana"
         }
       ],
       "block": {
@@ -327,11 +360,11 @@
       "sex": "M",
       "race": "Hoglin",
       "class": "Guerreiro",
-      "level": 1,
-      "life": 60,
-      "currLife": 39,
+      "level": 2,
+      "life": 70,
+      "currLife": 70,
       "mana": 60,
-      "currMana": 40,
+      "currMana": 60,
       "strength": 5,
       "agility": 3,
       "intelligence": 2,
@@ -414,6 +447,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Todos os aliados próximos ganham +1 nos testes e remove efeitos de medo. Não pode ser utilizado caso já esteja sob efeito de medo."
+        },
+        {
+          "name": "Combate com Duas Armas I",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Pode realizar até dois ataques corporais, desde que uma das armas tenha FN menor ou igual a metade da força. Habilidades de ação são válidas apenas para uma das armas"
         }
       ],
       "block": {
@@ -440,9 +481,9 @@
       "sex": "M",
       "race": "Aesir",
       "class": "Rúnico",
-      "level": 1,
-      "life": 60,
-      "currLife": 60,
+      "level": 2,
+      "life": 75,
+      "currLife": 75,
       "mana": 60,
       "currMana": 60,
       "strength": 5,
@@ -485,6 +526,15 @@
           "damage": "",
           "fn": 2,
           "effects": ""
+        },
+        {
+          "name": "Espada Gélida",
+          "type": "Arma",
+          "description": "Espada Gélida do reino de Fragatiel.",
+          "price": "-",
+          "damage": "(1d4)d6",
+          "fn": 4,
+          "effects": "Gaste 10 de mana (dif 18 - For). Você corta o ar com sua espada, congelando seus inimigos por 1 turno e dando 10 de dano em cada um deles."
         }
       ],
       "abilities": [
@@ -527,21 +577,29 @@
           "requisites": "-",
           "diff": 10,
           "description": "Conjura um escudo que deflete ataques. Pode ser segurado (Bloqueio +2, FN 2, ocupa 1 mão). Dura 2 turnos."
+        },
+        {
+          "name": "Robustez",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "+5 de vida. Rola +1d6 em testes de força, fadiga, venenos, e doenças"
         }
       ],
       "block": {
         "current": 13,
-        "armorBonus": "02",
+        "armorBonus": "2",
         "blockBonus": 1
       },
       "dodge": {
         "current": 9,
-        "armorBonus": "02",
+        "armorBonus": "2",
         "dodgeBonus": 0
       },
       "determination": {
         "current": 14,
-        "armorBonus": "02",
+        "armorBonus": "2",
         "determinationBonus": 0
       },
       "openMenu": false,
@@ -553,11 +611,11 @@
       "sex": "F",
       "race": "Faen",
       "class": "Feiticeira",
-      "level": 1,
+      "level": 2,
       "life": 60,
       "currLife": 60,
-      "mana": 65,
-      "currMana": 65,
+      "mana": 75,
+      "currMana": 75,
       "strength": 2,
       "agility": 4,
       "intelligence": 4,
@@ -649,6 +707,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Determinação +2. Dificuldade das magias reduzida em 1"
+        },
+        {
+          "name": "Eletricidade Estática",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 8,
+          "description": "Coloca uma forte carga estática em um alvo. Objetos inanimados não podem ser deslocados e seres vivos devem testar força (dif Det) para tentar sair. Caso falhem, continuarão presos ao chão."
         }
       ],
       "block": {
