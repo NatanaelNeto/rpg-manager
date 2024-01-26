@@ -741,15 +741,15 @@
       "sex": "M",
       "race": "Elfo",
       "class": "Bardo",
-      "level": 3,
+      "level": 4,
       "life": 70,
       "currLife": 70,
-      "mana": 75,
-      "currMana": 75,
+      "mana": 85,
+      "currMana": 85,
       "strength": 2,
       "agility": 5,
       "intelligence": 4,
-      "will": 4,
+      "will": 5,
       "equipments": [],
       "abilities": [
         {
@@ -807,6 +807,14 @@
           "requisites": "-",
           "diff": 12,
           "description": "Você toca um acorde poderoso e estridente, fazendo com que 50% do dano causado a 1d6 personagens seja ignorado."
+        },
+        {
+          "name": "Melodia Animada das Terras Áridas - Yupi!",
+          "type": "Ação",
+          "cost": "20",
+          "requisites": "-",
+          "diff": 10,
+          "description": "Você toca um ritmo animado demais para ficar parado. Ao citar o nome de alguém, ela deverá testar vontade contra você. Caso perca, receberá -1 de defesa e testará todos o testes de agilidade como inapto."
         }
       ],
       "block": {
@@ -820,13 +828,67 @@
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 12,
+        "current": 13,
         "armorBonus": "0",
         "determinationBonus": 0
       },
       "openMenu": false,
       "unified": true,
       "id": 7
+    },
+    {
+      "name": "Edwiges",
+      "sex": "F",
+      "race": "Coruja",
+      "class": "Gigante",
+      "level": 1,
+      "life": 20,
+      "currLife": 20,
+      "mana": 20,
+      "currMana": 20,
+      "strength": 3,
+      "agility": 3,
+      "intelligence": 4,
+      "will": 3,
+      "equipments": [
+        {
+          "name": "Garras",
+          "type": "Arma",
+          "description": "-",
+          "price": "-",
+          "damage": "For +3",
+          "fn": 0,
+          "effects": "-"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Asas Ancestrais",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Voa e plana. Não pode parar em voo. Encontrão causa o dobro de dano,"
+        }
+      ],
+      "block": {
+        "current": 8,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 8,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 12,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 8
     }
   ],
   "enemies": [
