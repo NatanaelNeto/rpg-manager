@@ -1,1020 +1,14 @@
 {
-  "scenes": [
-    {
-      "name": "Forte Cabeçada",
-      "scene": [
-        {
-          "init": 13,
-          "char": {
-            "name": "Orion Lander",
-            "sex": "M",
-            "race": "Hoglin",
-            "class": "Guerreiro",
-            "level": 1,
-            "life": 60,
-            "currLife": 60,
-            "mana": 60,
-            "currMana": 60,
-            "strength": 5,
-            "agility": 3,
-            "intelligence": 2,
-            "will": 3,
-            "equipments": [
-              {
-                "name": "Sabre",
-                "type": "Arma",
-                "description": "-",
-                "price": "100/prata",
-                "damage": "For+7",
-                "fn": 3,
-                "effects": "-"
-              },
-              {
-                "name": "Maça Estrela",
-                "type": "Arma",
-                "description": "-",
-                "price": "100/prata",
-                "damage": "For+7",
-                "fn": 4,
-                "effects": "-"
-              },
-              {
-                "name": "Escudo Médio",
-                "type": "Escudo",
-                "description": "Defesa +2",
-                "price": "100/Prata",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              },
-              {
-                "name": "Armadura de Couro",
-                "type": "Armadura",
-                "description": "Defesa +2",
-                "price": "",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Regurgitar",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "-",
-                "diff": 10,
-                "description": "Só pode ser usada 2 vezes por combate. Vomita nos inimigos ao redor. Teste de força (dif = determinação). Caso falhem, tomam 10 de dano e precisam testar agilidade (dif 12) para não caírem. Ficam 1d4 turnos envenenados."
-              },
-              {
-                "name": "Mestre de Armas I",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "",
-                "diff": 0,
-                "description": "+3 de dano ao atacar."
-              },
-              {
-                "name": "Combate em Grupo",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "+1 em testes de ataque para cada aliado atacando o mesmo alvo"
-              },
-              {
-                "name": "Ataque Simultâneo",
-                "type": "Ação",
-                "cost": "20",
-                "requisites": "Combate em Grupo",
-                "diff": 0,
-                "description": "Ao atacar, todos os aliados poderão realizar um ataque normal ao oponente."
-              },
-              {
-                "name": "Grito de Guerra I",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Todos os aliados próximos ganham +1 nos testes e remove efeitos de medo. Não pode ser utilizado caso já esteja sob efeito de medo."
-              }
-            ],
-            "block": {
-              "current": 14,
-              "armorBonus": "2",
-              "blockBonus": 2
-            },
-            "dodge": {
-              "current": 10,
-              "armorBonus": "2",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 13,
-              "armorBonus": "2",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": true,
-            "id": 4
-          }
-        }
-      ],
-      "id": 1
-    },
-    {
-      "name": "Forte Cabeçada",
-      "scene": [],
-      "id": 2
-    },
-    {
-      "name": "Posto Avançado",
-      "scene": [
-        {
-          "init": 20,
-          "char": {
-            "name": "Lyra Tuk",
-            "sex": "F",
-            "race": "Levent",
-            "class": "Paladina",
-            "level": 1,
-            "life": 60,
-            "currLife": 60,
-            "mana": 60,
-            "currMana": 60,
-            "strength": 3,
-            "agility": 3,
-            "intelligence": 3,
-            "will": 4,
-            "equipments": [
-              {
-                "name": "Espada Curta",
-                "type": "Arma",
-                "description": "-",
-                "price": "100/prata",
-                "damage": "For+6",
-                "fn": 2,
-                "effects": "-"
-              },
-              {
-                "name": "Escudo Médio",
-                "type": "Escudo",
-                "description": "Defesa+2",
-                "price": "",
-                "damage": "",
-                "fn": 3,
-                "effects": ""
-              },
-              {
-                "name": "Armadura de Couro",
-                "type": "Armadura",
-                "description": "Defesa +2",
-                "price": "",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Asas Ancestrais",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Voa e plana. Não pode parar em voo. Encontrão causa o dobro de dano,"
-              },
-              {
-                "name": "Mestra de Armas I",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "+3 de dano ao atacar"
-              },
-              {
-                "name": "Código da Lealdadde",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Não pode atacar um combatente por um fio. Não permite lutas injustas. Não trai e não aceita traição. Recupera o dobro de PV e PM"
-              },
-              {
-                "name": "Combate Tático",
-                "type": "Reação",
-                "cost": "-",
-                "requisites": "",
-                "diff": 0,
-                "description": "Derrotar um oponente com um ataque corporal permite outro ataque (sem custos)"
-              },
-              {
-                "name": "Justiça Final I",
-                "type": "Ação",
-                "cost": "25 de mana",
-                "requisites": "-",
-                "diff": 0,
-                "description": "O ataque causa o dobro de dano (triplo para mortos-vivos, infernais, espíritos ou espectros)"
-              }
-            ],
-            "block": {
-              "current": 12,
-              "armorBonus": "02",
-              "blockBonus": 2
-            },
-            "dodge": {
-              "current": 10,
-              "armorBonus": "02",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 14,
-              "armorBonus": "02",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": true,
-            "id": 1
-          }
-        },
-        {
-          "init": 13,
-          "char": {
-            "name": "Aerin Roosemboldt",
-            "sex": "F",
-            "race": "Faen",
-            "class": "Ladina",
-            "level": 1,
-            "life": 60,
-            "currLife": 54,
-            "mana": 60,
-            "currMana": 60,
-            "strength": 2,
-            "agility": 5,
-            "intelligence": 4,
-            "will": 2,
-            "equipments": [
-              {
-                "name": "Adaga",
-                "type": "Arma",
-                "description": "",
-                "price": "50",
-                "damage": "For+4",
-                "fn": 1,
-                "effects": ""
-              },
-              {
-                "name": "Grimório",
-                "type": "Canalizador",
-                "description": "",
-                "price": "50",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              },
-              {
-                "name": "Varinha",
-                "type": "Conjurador",
-                "description": "-",
-                "price": "25",
-                "damage": "",
-                "fn": 1,
-                "effects": "-"
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Constituição Feérica",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Corpo leve e pode voar. Encontrão causa o dobro de dano da arma."
-              },
-              {
-                "name": "Isnuu",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Pode usar habilidades de feiticeiro. Dificuldade das magias reduzida em 1."
-              },
-              {
-                "name": "Contatos no Crime",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Consegue informações privilegiadas e custos reduzidos de compra de itens."
-              },
-              {
-                "name": "Armadilheira",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Pode desarmar e armar qualquer armadilhas (desde que tenha recurso para criar). Armadilhas armadas possuem 1d6 + Inteligência de dificuldade."
-              },
-              {
-                "name": "Gatuno",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Consegue furtar bolsas e arrombar portas. Rola 3d6 em testes de furtividade ou deslocamento."
-              }
-            ],
-            "block": {
-              "current": 7,
-              "armorBonus": "0",
-              "blockBonus": 0
-            },
-            "dodge": {
-              "current": 10,
-              "armorBonus": "0",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 12,
-              "armorBonus": "0",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": true,
-            "id": 3
-          }
-        },
-        {
-          "init": 12,
-          "char": {
-            "name": "Bob",
-            "sex": "M",
-            "race": "Goblin",
-            "class": "Soldado",
-            "level": 1,
-            "life": 20,
-            "currLife": 0,
-            "mana": 10,
-            "currMana": 10,
-            "strength": 3,
-            "agility": 4,
-            "intelligence": 3,
-            "will": 2,
-            "equipments": [
-              {
-                "name": "Espada Curta",
-                "type": "Arma",
-                "description": "",
-                "price": "-",
-                "damage": "8",
-                "fn": 0,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Ataque Giratório",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "",
-                "diff": 0,
-                "description": "Pode atacar os oponentes ao redor"
-              }
-            ],
-            "block": {
-              "current": 10,
-              "armorBonus": "2",
-              "blockBonus": 0
-            },
-            "dodge": {
-              "current": 11,
-              "armorBonus": "2",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 13,
-              "armorBonus": "2",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": false,
-            "id": 1
-          }
-        },
-        {
-          "init": 12,
-          "char": {
-            "name": "Orion Lander",
-            "sex": "M",
-            "race": "Hoglin",
-            "class": "Guerreiro",
-            "level": 1,
-            "life": 60,
-            "currLife": 39,
-            "mana": 60,
-            "currMana": 40,
-            "strength": 5,
-            "agility": 3,
-            "intelligence": 2,
-            "will": 3,
-            "equipments": [
-              {
-                "name": "Sabre",
-                "type": "Arma",
-                "description": "-",
-                "price": "100/prata",
-                "damage": "For+7",
-                "fn": 3,
-                "effects": "-"
-              },
-              {
-                "name": "Maça Estrela",
-                "type": "Arma",
-                "description": "-",
-                "price": "100/prata",
-                "damage": "For+7",
-                "fn": 4,
-                "effects": "-"
-              },
-              {
-                "name": "Escudo Médio",
-                "type": "Escudo",
-                "description": "Defesa +2",
-                "price": "100/Prata",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              },
-              {
-                "name": "Armadura de Couro",
-                "type": "Armadura",
-                "description": "Defesa +2",
-                "price": "",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Regurgitar",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "-",
-                "diff": 10,
-                "description": "Só pode ser usada 2 vezes por combate. Vomita nos inimigos ao redor. Teste de força (dif = determinação). Caso falhem, tomam 10 de dano e precisam testar agilidade (dif 12) para não caírem. Ficam 1d4 turnos envenenados."
-              },
-              {
-                "name": "Mestre de Armas I",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "",
-                "diff": 0,
-                "description": "+3 de dano ao atacar."
-              },
-              {
-                "name": "Combate em Grupo",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "+1 em testes de ataque para cada aliado atacando o mesmo alvo"
-              },
-              {
-                "name": "Ataque Simultâneo",
-                "type": "Ação",
-                "cost": "20",
-                "requisites": "Combate em Grupo",
-                "diff": 0,
-                "description": "Ao atacar, todos os aliados poderão realizar um ataque normal ao oponente."
-              },
-              {
-                "name": "Grito de Guerra I",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Todos os aliados próximos ganham +1 nos testes e remove efeitos de medo. Não pode ser utilizado caso já esteja sob efeito de medo."
-              }
-            ],
-            "block": {
-              "current": 14,
-              "armorBonus": "2",
-              "blockBonus": 2
-            },
-            "dodge": {
-              "current": 10,
-              "armorBonus": "2",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 13,
-              "armorBonus": "2",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": true,
-            "id": 4
-          }
-        },
-        {
-          "init": 8,
-          "char": {
-            "name": "Bob",
-            "sex": "M",
-            "race": "Goblin",
-            "class": "Soldado",
-            "level": 1,
-            "life": 20,
-            "currLife": 0,
-            "mana": 10,
-            "currMana": 10,
-            "strength": 3,
-            "agility": 4,
-            "intelligence": 3,
-            "will": 2,
-            "equipments": [
-              {
-                "name": "Espada Curta",
-                "type": "Arma",
-                "description": "",
-                "price": "-",
-                "damage": "8",
-                "fn": 0,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Ataque Giratório",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "",
-                "diff": 0,
-                "description": "Pode atacar os oponentes ao redor"
-              }
-            ],
-            "block": {
-              "current": 10,
-              "armorBonus": "2",
-              "blockBonus": 0
-            },
-            "dodge": {
-              "current": 11,
-              "armorBonus": "2",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 13,
-              "armorBonus": "2",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": false,
-            "id": 1
-          }
-        },
-        {
-          "init": 8,
-          "char": {
-            "name": "Aizengard Elf",
-            "sex": "M",
-            "race": "Humano",
-            "class": "Feiticeiro",
-            "level": 1,
-            "life": 60,
-            "currLife": 60,
-            "mana": 60,
-            "currMana": 60,
-            "strength": 3,
-            "agility": 3,
-            "intelligence": 5,
-            "will": 4,
-            "equipments": [
-              {
-                "name": "Cetro",
-                "type": "Canalizador",
-                "description": "-",
-                "price": "",
-                "damage": "For+6",
-                "fn": 3,
-                "effects": ""
-              },
-              {
-                "name": "Punhal",
-                "type": "Arma/Canalizador",
-                "description": "-",
-                "price": "",
-                "damage": "For+4",
-                "fn": 1,
-                "effects": "-"
-              },
-              {
-                "name": "Grimório",
-                "type": "Canalizador",
-                "description": "-",
-                "price": "",
-                "damage": "-",
-                "fn": 2,
-                "effects": "-"
-              },
-              {
-                "name": "Túnica Pesada",
-                "type": "Armadura",
-                "description": "Defesa +1",
-                "price": "",
-                "damage": "",
-                "fn": 1,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Mente Disciplinada",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Determinação +2. Dificuldade das magias reduzida em 1"
-              },
-              {
-                "name": "Adaptabilidade",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "+1 em um atributo qualquer (inteligência)"
-              },
-              {
-                "name": "Conhecimento Arcano",
-                "type": "Ação",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Consegue canalizar, detectar, decifrar e utilizar poderes mágicos. Pode usar vida como custo da habilidade (2 de vida para 1 de mana)"
-              },
-              {
-                "name": "Inflamar",
-                "type": "Ação",
-                "cost": "Variável",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Incendeia um objeto, causando dano de acordo com o tamanho da bola de fogo"
-              },
-              {
-                "name": "Companheiro Animal",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Tem uma coruja"
-              }
-            ],
-            "block": {
-              "current": 9,
-              "armorBonus": "1",
-              "blockBonus": 0
-            },
-            "dodge": {
-              "current": 9,
-              "armorBonus": "1",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 16,
-              "armorBonus": "1",
-              "determinationBonus": 2
-            },
-            "openMenu": false,
-            "unified": true,
-            "id": 2
-          }
-        },
-        {
-          "init": 6,
-          "char": {
-            "name": "Bjorn Hallstatt",
-            "sex": "M",
-            "race": "Aesir",
-            "class": "Rúnico",
-            "level": 1,
-            "life": 60,
-            "currLife": 60,
-            "mana": 60,
-            "currMana": 60,
-            "strength": 5,
-            "agility": 2,
-            "intelligence": 4,
-            "will": 3,
-            "equipments": [
-              {
-                "name": "Espada Gélida",
-                "type": "Arma",
-                "description": "",
-                "price": "150",
-                "damage": "For+8",
-                "fn": 5,
-                "effects": ""
-              },
-              {
-                "name": "Machado de Batalha",
-                "type": "Arma",
-                "description": "",
-                "price": "150",
-                "damage": "For+8",
-                "fn": 5,
-                "effects": ""
-              },
-              {
-                "name": "Maça Estrela",
-                "type": "Arma",
-                "description": "",
-                "price": "100",
-                "damage": "For+7",
-                "fn": 4,
-                "effects": ""
-              },
-              {
-                "name": "Armadura de Couro",
-                "type": "Armadura",
-                "description": "Defesa +2",
-                "price": "100",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              },
-              {
-                "name": "Escudo Pequeno",
-                "type": "Escudo",
-                "description": "Defesa +1",
-                "price": "50",
-                "damage": "",
-                "fn": 2,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Conhecimento Arcano",
-                "type": "Ação",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Consegue canalizar, detectar, decifrar e utilizar poderes mágicos. Pode usar vida como custo da habilidade (2 de vida para 1 de mana)"
-              },
-              {
-                "name": "Vigor Nórdico",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Sofre metade do dano de frio e é imune a enregelamento."
-              },
-              {
-                "name": "Arma Gélida",
-                "type": "Ação",
-                "cost": "5",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Atacar com uma arma marcada com a runa pessoal adiciona +8 de dano de frio."
-              },
-              {
-                "name": "Fúria Bestial",
-                "type": "Ação",
-                "cost": "30",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Recebe +2 de Força e fica imune a efeitos de Medo. Espírito animal limitado a Urso e Lobo."
-              },
-              {
-                "name": "Conjurar Escudo",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "-",
-                "diff": 10,
-                "description": "Conjura um escudo que deflete ataques. Pode ser segurado (Bloqueio +2, FN 2, ocupa 1 mão). Dura 2 turnos."
-              }
-            ],
-            "block": {
-              "current": 13,
-              "armorBonus": "02",
-              "blockBonus": 1
-            },
-            "dodge": {
-              "current": 9,
-              "armorBonus": "02",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 14,
-              "armorBonus": "02",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": true,
-            "id": 5
-          }
-        },
-        {
-          "init": 3,
-          "char": {
-            "name": "Bob",
-            "sex": "M",
-            "race": "Goblin",
-            "class": "Soldado",
-            "level": 1,
-            "life": 20,
-            "currLife": 6,
-            "mana": 10,
-            "currMana": 10,
-            "strength": 3,
-            "agility": 4,
-            "intelligence": 3,
-            "will": 2,
-            "equipments": [
-              {
-                "name": "Espada Curta",
-                "type": "Arma",
-                "description": "",
-                "price": "-",
-                "damage": "8",
-                "fn": 0,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Ataque Giratório",
-                "type": "Ação",
-                "cost": "10",
-                "requisites": "",
-                "diff": 0,
-                "description": "Pode atacar os oponentes ao redor"
-              }
-            ],
-            "block": {
-              "current": 10,
-              "armorBonus": "2",
-              "blockBonus": 0
-            },
-            "dodge": {
-              "current": 11,
-              "armorBonus": "2",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 13,
-              "armorBonus": "2",
-              "determinationBonus": 0
-            },
-            "openMenu": false,
-            "unified": false,
-            "id": 1
-          }
-        },
-        {
-          "init": 1,
-          "char": {
-            "name": "Madlayne",
-            "sex": "F",
-            "race": "Faen",
-            "class": "Feiticeira",
-            "level": 1,
-            "life": 60,
-            "currLife": 60,
-            "mana": 65,
-            "currMana": 65,
-            "strength": 2,
-            "agility": 4,
-            "intelligence": 4,
-            "will": 3,
-            "equipments": [
-              {
-                "name": "Grimório",
-                "type": "Canalizador",
-                "description": "-",
-                "price": "50",
-                "damage": "",
-                "fn": 2,
-                "effects": "-"
-              },
-              {
-                "name": "Varinha",
-                "type": "Canalizador",
-                "description": "",
-                "price": "25",
-                "damage": "",
-                "fn": 1,
-                "effects": ""
-              },
-              {
-                "name": "Glaive",
-                "type": "Arma",
-                "description": "-",
-                "price": "250",
-                "damage": "For+10",
-                "fn": 4,
-                "effects": "-"
-              },
-              {
-                "name": "Poção de vida",
-                "type": "poção",
-                "description": "10 de vida",
-                "price": "",
-                "damage": "",
-                "fn": 0,
-                "effects": "-"
-              },
-              {
-                "name": "Mapa de Fragatiel",
-                "type": "",
-                "description": "",
-                "price": "",
-                "damage": "",
-                "fn": 0,
-                "effects": ""
-              }
-            ],
-            "abilities": [
-              {
-                "name": "Constituição Feérica",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Corpo leve e pode voar. Encontrão causa o dobro de dano da arma."
-              },
-              {
-                "name": "Conhecimento Arcano",
-                "type": "Ação",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Consegue canalizar, detectar, decifrar e utilizar poderes mágicos. Pode usar vida como custo da habilidade (2 de vida para 1 de mana)"
-              },
-              {
-                "name": "Herança Feérica",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Imunidade a efeitos mentais e Medo. Percebe ilusões imediatamente. Ganha +5 de mana."
-              },
-              {
-                "name": "Presença Real",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Permite comunicação com artrópodes, dar comandos e invocar. Resistência a habilidades provindas de artrópodes."
-              },
-              {
-                "name": "Mente Disciplinada",
-                "type": "Suporte",
-                "cost": "-",
-                "requisites": "-",
-                "diff": 0,
-                "description": "Determinação +2. Dificuldade das magias reduzida em 1"
-              }
-            ],
-            "block": {
-              "current": 7,
-              "armorBonus": "0",
-              "blockBonus": 0
-            },
-            "dodge": {
-              "current": 9,
-              "armorBonus": "0",
-              "dodgeBonus": 0
-            },
-            "determination": {
-              "current": 14,
-              "armorBonus": "0",
-              "determinationBonus": 2
-            },
-            "openMenu": false,
-            "unified": true,
-            "id": 6
-          }
-        }
-      ],
-      "id": 3
-    },
-    {
-      "name": "Cena 1",
-      "scene": [],
-      "id": 4
-    }
-  ],
+  "scenes": [],
   "characters": [
     {
       "name": "Lyra Tuk",
       "sex": "F",
       "race": "Levent",
       "class": "Paladina",
-      "level": 1,
-      "life": 60,
-      "currLife": 60,
+      "level": 2,
+      "life": 70,
+      "currLife": 70,
       "mana": 60,
       "currMana": 60,
       "strength": 3,
@@ -1048,6 +42,15 @@
           "damage": "",
           "fn": 2,
           "effects": ""
+        },
+        {
+          "name": "Armadura Simples",
+          "type": "Armadura",
+          "description": "Defesa +3",
+          "price": "-",
+          "damage": "-",
+          "fn": 0,
+          "effects": "-"
         }
       ],
       "abilities": [
@@ -1090,21 +93,29 @@
           "requisites": "-",
           "diff": 0,
           "description": "O ataque causa o dobro de dano (triplo para mortos-vivos, infernais, espíritos ou espectros)"
+        },
+        {
+          "name": "Sem Escapatória",
+          "type": "Reação",
+          "cost": "-",
+          "requisites": "Combate Tático",
+          "diff": 0,
+          "description": "Pode realizar um ataque caso um oponente por perto tente se levantar ou fugir. Se acertar, além do dano do ataque, o oponente perderá seu próximo turno."
         }
       ],
       "block": {
-        "current": 12,
-        "armorBonus": "02",
+        "current": 13,
+        "armorBonus": "3",
         "blockBonus": 2
       },
       "dodge": {
-        "current": 10,
-        "armorBonus": "02",
+        "current": 11,
+        "armorBonus": "3",
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 14,
-        "armorBonus": "02",
+        "current": 15,
+        "armorBonus": "3",
         "determinationBonus": 0
       },
       "openMenu": false,
@@ -1116,11 +127,11 @@
       "sex": "M",
       "race": "Humano",
       "class": "Feiticeiro",
-      "level": 1,
+      "level": 2,
       "life": 60,
       "currLife": 60,
-      "mana": 60,
-      "currMana": 60,
+      "mana": 70,
+      "currMana": 70,
       "strength": 3,
       "agility": 3,
       "intelligence": 5,
@@ -1203,6 +214,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Tem uma coruja"
+        },
+        {
+          "name": "Bola de Fogo",
+          "type": "Ação",
+          "cost": "20",
+          "requisites": "Inflamar",
+          "diff": 12,
+          "description": "Causa 20 de dano de fogo em um alvo e 10 de dano de fogo em inimigos adjacentes ao alvo."
         }
       ],
       "block": {
@@ -1229,11 +248,11 @@
       "sex": "F",
       "race": "Faen",
       "class": "Ladina",
-      "level": 1,
-      "life": 60,
-      "currLife": 60,
-      "mana": 60,
-      "currMana": 60,
+      "level": 2,
+      "life": 70,
+      "currLife": 70,
+      "mana": 65,
+      "currMana": 65,
       "strength": 2,
       "agility": 5,
       "intelligence": 4,
@@ -1307,6 +326,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Consegue furtar bolsas e arrombar portas. Rola 3d6 em testes de furtividade ou deslocamento."
+        },
+        {
+          "name": "Herança Feérica",
+          "type": "Suporte",
+          "cost": "",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Imune a efeitos mentais. Detecta ilusões imediatamente. +5 de mana"
         }
       ],
       "block": {
@@ -1333,11 +360,11 @@
       "sex": "M",
       "race": "Hoglin",
       "class": "Guerreiro",
-      "level": 1,
-      "life": 60,
-      "currLife": 39,
+      "level": 2,
+      "life": 70,
+      "currLife": 70,
       "mana": 60,
-      "currMana": 40,
+      "currMana": 60,
       "strength": 5,
       "agility": 3,
       "intelligence": 2,
@@ -1420,6 +447,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Todos os aliados próximos ganham +1 nos testes e remove efeitos de medo. Não pode ser utilizado caso já esteja sob efeito de medo."
+        },
+        {
+          "name": "Combate com Duas Armas I",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Pode realizar até dois ataques corporais, desde que uma das armas tenha FN menor ou igual a metade da força. Habilidades de ação são válidas apenas para uma das armas"
         }
       ],
       "block": {
@@ -1446,9 +481,9 @@
       "sex": "M",
       "race": "Aesir",
       "class": "Rúnico",
-      "level": 1,
-      "life": 60,
-      "currLife": 60,
+      "level": 2,
+      "life": 75,
+      "currLife": 75,
       "mana": 60,
       "currMana": 60,
       "strength": 5,
@@ -1491,6 +526,15 @@
           "damage": "",
           "fn": 2,
           "effects": ""
+        },
+        {
+          "name": "Espada Gélida",
+          "type": "Arma",
+          "description": "Espada Gélida do reino de Fragatiel.",
+          "price": "-",
+          "damage": "(1d4)d6",
+          "fn": 4,
+          "effects": "Gaste 10 de mana (dif 18 - For). Você corta o ar com sua espada, congelando seus inimigos por 1 turno e dando 10 de dano em cada um deles."
         }
       ],
       "abilities": [
@@ -1533,21 +577,29 @@
           "requisites": "-",
           "diff": 10,
           "description": "Conjura um escudo que deflete ataques. Pode ser segurado (Bloqueio +2, FN 2, ocupa 1 mão). Dura 2 turnos."
+        },
+        {
+          "name": "Robustez",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "+5 de vida. Rola +1d6 em testes de força, fadiga, venenos, e doenças"
         }
       ],
       "block": {
         "current": 13,
-        "armorBonus": "02",
+        "armorBonus": "2",
         "blockBonus": 1
       },
       "dodge": {
         "current": 9,
-        "armorBonus": "02",
+        "armorBonus": "2",
         "dodgeBonus": 0
       },
       "determination": {
         "current": 14,
-        "armorBonus": "02",
+        "armorBonus": "2",
         "determinationBonus": 0
       },
       "openMenu": false,
@@ -1559,11 +611,11 @@
       "sex": "F",
       "race": "Faen",
       "class": "Feiticeira",
-      "level": 1,
+      "level": 2,
       "life": 60,
       "currLife": 60,
-      "mana": 65,
-      "currMana": 65,
+      "mana": 75,
+      "currMana": 75,
       "strength": 2,
       "agility": 4,
       "intelligence": 4,
@@ -1655,6 +707,14 @@
           "requisites": "-",
           "diff": 0,
           "description": "Determinação +2. Dificuldade das magias reduzida em 1"
+        },
+        {
+          "name": "Eletricidade Estática",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 8,
+          "description": "Coloca uma forte carga estática em um alvo. Objetos inanimados não podem ser deslocados e seres vivos devem testar força (dif Det) para tentar sair. Caso falhem, continuarão presos ao chão."
         }
       ],
       "block": {
@@ -1681,15 +741,15 @@
       "sex": "M",
       "race": "Elfo",
       "class": "Bardo",
-      "level": 3,
+      "level": 4,
       "life": 70,
       "currLife": 70,
-      "mana": 75,
-      "currMana": 75,
+      "mana": 85,
+      "currMana": 85,
       "strength": 2,
       "agility": 5,
       "intelligence": 4,
-      "will": 4,
+      "will": 5,
       "equipments": [],
       "abilities": [
         {
@@ -1747,6 +807,14 @@
           "requisites": "-",
           "diff": 12,
           "description": "Você toca um acorde poderoso e estridente, fazendo com que 50% do dano causado a 1d6 personagens seja ignorado."
+        },
+        {
+          "name": "Melodia Animada das Terras Áridas - Yupi!",
+          "type": "Ação",
+          "cost": "20",
+          "requisites": "-",
+          "diff": 10,
+          "description": "Você toca um ritmo animado demais para ficar parado. Ao citar o nome de alguém, ela deverá testar vontade contra você. Caso perca, receberá -1 de defesa e testará todos o testes de agilidade como inapto."
         }
       ],
       "block": {
@@ -1760,118 +828,207 @@
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 12,
+        "current": 13,
         "armorBonus": "0",
         "determinationBonus": 0
       },
       "openMenu": false,
       "unified": true,
       "id": 7
+    },
+    {
+      "name": "Edwiges",
+      "sex": "F",
+      "race": "Coruja",
+      "class": "Gigante",
+      "level": 1,
+      "life": 20,
+      "currLife": 20,
+      "mana": 20,
+      "currMana": 20,
+      "strength": 3,
+      "agility": 3,
+      "intelligence": 4,
+      "will": 3,
+      "equipments": [
+        {
+          "name": "Garras",
+          "type": "Arma",
+          "description": "-",
+          "price": "-",
+          "damage": "For +3",
+          "fn": 0,
+          "effects": "-"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Asas Ancestrais",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Voa e plana. Não pode parar em voo. Encontrão causa o dobro de dano,"
+        }
+      ],
+      "block": {
+        "current": 8,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 8,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 12,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": true,
+      "id": 8
     }
   ],
   "enemies": [
     {
-      "name": "Bob",
+      "name": "Gorn Smug",
       "sex": "M",
-      "race": "Goblin",
-      "class": "Soldado",
-      "level": 1,
-      "life": 20,
-      "currLife": 20,
-      "mana": 10,
-      "currMana": 10,
-      "strength": 3,
+      "race": "Orc",
+      "class": "Líder do Pelotão Leste",
+      "level": 4,
+      "life": 40,
+      "currLife": 40,
+      "mana": 30,
+      "currMana": 30,
+      "strength": 6,
       "agility": 4,
       "intelligence": 3,
-      "will": 2,
+      "will": 4,
       "equipments": [
         {
-          "name": "Espada Curta",
+          "name": "Machado de Batalha",
           "type": "Arma",
-          "description": "",
-          "price": "-",
-          "damage": "8",
-          "fn": 0,
+          "description": "Machado pesado de batalha",
+          "price": "150",
+          "damage": "For +8",
+          "fn": 5,
+          "effects": "-"
+        },
+        {
+          "name": "Armadura Simples",
+          "type": "Armadura",
+          "description": "Defesa +2",
+          "price": "100",
+          "damage": "",
+          "fn": 2,
           "effects": ""
         }
       ],
       "abilities": [
         {
-          "name": "Ataque Giratório",
+          "name": "Grito de Guerra",
           "type": "Ação",
           "cost": "10",
-          "requisites": "",
+          "requisites": "-",
           "diff": 0,
-          "description": "Pode atacar os oponentes ao redor"
+          "description": "Aliados recebem +1 em todos os testes"
+        },
+        {
+          "name": "Combate Tático",
+          "type": "Reação",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Derrubar um oponente concede uma ação extra"
         }
       ],
       "block": {
-        "current": 10,
-        "armorBonus": "2",
+        "current": 14,
+        "armorBonus": "3",
         "blockBonus": 0
       },
       "dodge": {
-        "current": 11,
-        "armorBonus": "2",
+        "current": 12,
+        "armorBonus": "3",
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 13,
-        "armorBonus": "2",
+        "current": 15,
+        "armorBonus": "3",
         "determinationBonus": 0
       },
       "openMenu": false,
-      "unified": false,
+      "unified": true,
       "id": 1
     },
     {
-      "name": "Klek",
+      "name": "Muvak",
       "sex": "M",
-      "race": "Goblin",
-      "class": "Líder",
-      "level": 1,
-      "life": 20,
-      "currLife": 20,
+      "race": "Orc",
+      "class": "Herói de Guerra",
+      "level": 3,
+      "life": 40,
+      "currLife": 40,
       "mana": 30,
       "currMana": 30,
-      "strength": 3,
-      "agility": 5,
-      "intelligence": 3,
-      "will": 3,
+      "strength": 6,
+      "agility": 4,
+      "intelligence": 2,
+      "will": 4,
       "equipments": [
         {
-          "name": "Espada Curta",
+          "name": "Escudo Pequeno",
+          "type": "Escudo",
+          "description": "Bloqueio +1",
+          "price": "50",
+          "damage": "-",
+          "fn": 2,
+          "effects": "-"
+        },
+        {
+          "name": "Armadura Simples",
+          "type": "Armadura",
+          "description": "Defesa +3",
+          "price": "200",
+          "damage": "-",
+          "fn": 4,
+          "effects": "-"
+        },
+        {
+          "name": "Machdo de Batalha",
           "type": "Arma",
-          "description": "",
-          "price": "-",
-          "damage": "8",
-          "fn": 0,
-          "effects": ""
+          "description": "-",
+          "price": "150",
+          "damage": "For +8",
+          "fn": 5,
+          "effects": "-"
         }
       ],
       "abilities": [
         {
-          "name": "Ataque Giratório",
+          "name": "Golpe Devastador",
           "type": "Ação",
-          "cost": "10",
-          "requisites": "",
+          "cost": "30",
+          "requisites": "-",
           "diff": 0,
-          "description": "Pode atacar os oponentes ao redor"
+          "description": "Próximo golpe causa o dobro de dano e anula próximo turno do oponente"
         }
       ],
       "block": {
-        "current": 12,
-        "armorBonus": "2",
-        "blockBonus": 2
+        "current": 15,
+        "armorBonus": "3",
+        "blockBonus": 1
       },
       "dodge": {
         "current": 12,
-        "armorBonus": "2",
+        "armorBonus": "3",
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 13,
-        "armorBonus": "2",
+        "current": 15,
+        "armorBonus": "3",
         "determinationBonus": 0
       },
       "openMenu": false,
@@ -1879,44 +1036,44 @@
       "id": 2
     },
     {
-      "name": "Gruvak",
-      "sex": "F",
+      "name": "Gragmog",
+      "sex": "M",
       "race": "Orc",
-      "class": "Guerreira",
+      "class": "Guerreiro",
       "level": 1,
-      "life": 40,
-      "currLife": 40,
-      "mana": 30,
-      "currMana": 30,
+      "life": 30,
+      "currLife": 30,
+      "mana": 20,
+      "currMana": 20,
       "strength": 5,
       "agility": 4,
       "intelligence": 2,
       "will": 3,
       "equipments": [
         {
-          "name": "Machado Pesado",
+          "name": "Maça Leve",
           "type": "Arma",
           "description": "-",
-          "price": "",
-          "damage": "12",
-          "fn": 0,
+          "price": "25",
+          "damage": "For +5",
+          "fn": 2,
           "effects": "-"
         },
         {
           "name": "Armadura de Couro",
           "type": "Armadura",
-          "description": "+2 na defesa",
-          "price": "",
-          "damage": "-",
-          "fn": 0,
-          "effects": "-"
+          "description": "Defesa +2",
+          "price": "100",
+          "damage": "",
+          "fn": 2,
+          "effects": ""
         }
       ],
       "abilities": [],
       "block": {
         "current": 12,
         "armorBonus": "2",
-        "blockBonus": null
+        "blockBonus": 0
       },
       "dodge": {
         "current": 11,
@@ -1933,15 +1090,15 @@
       "id": 3
     },
     {
-      "name": "Frigda",
+      "name": "Megrag",
       "sex": "F",
       "race": "Orc",
-      "class": "Xamã",
+      "class": "Xamanista",
       "level": 1,
       "life": 30,
       "currLife": 30,
-      "mana": 30,
-      "currMana": 30,
+      "mana": 40,
+      "currMana": 40,
       "strength": 4,
       "agility": 3,
       "intelligence": 3,
@@ -1949,28 +1106,45 @@
       "equipments": [
         {
           "name": "Cajado",
-          "type": "Arma",
-          "description": "",
-          "price": "",
-          "damage": "",
-          "fn": 0,
-          "effects": ""
+          "type": "Arma/Canalizador",
+          "description": "Pode ser usado para canalizar magias",
+          "price": "50",
+          "damage": "For +4",
+          "fn": 1,
+          "effects": "-"
         }
       ],
-      "abilities": [],
+      "abilities": [
+        {
+          "name": "Energia Sombria",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 10,
+          "description": "Causa 8 de dano e faz o alvo perder 10 de mana"
+        },
+        {
+          "name": "Curar Ferimentos",
+          "type": "Ação",
+          "cost": "5",
+          "requisites": "-",
+          "diff": 10,
+          "description": "Pode curar 10 de vida de um dos aliados"
+        }
+      ],
       "block": {
-        "current": 11,
-        "armorBonus": "2",
-        "blockBonus": null
+        "current": 9,
+        "armorBonus": "0",
+        "blockBonus": 0
       },
       "dodge": {
-        "current": 10,
-        "armorBonus": "2",
+        "current": 8,
+        "armorBonus": "0",
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 14,
-        "armorBonus": "2",
+        "current": 12,
+        "armorBonus": "0",
         "determinationBonus": 0
       },
       "openMenu": false,
@@ -1978,8 +1152,8 @@
       "id": 4
     },
     {
-      "name": "Braksha",
-      "sex": "M",
+      "name": "Vah'galesh",
+      "sex": "F",
       "race": "Naga",
       "class": "Comum",
       "level": 1,
@@ -1995,14 +1169,39 @@
         {
           "name": "Sabre",
           "type": "Arma",
-          "description": "",
-          "price": "",
-          "damage": "8",
-          "fn": 0,
-          "effects": ""
+          "description": "-",
+          "price": "100",
+          "damage": "For +6",
+          "fn": 2,
+          "effects": "-"
         }
       ],
-      "abilities": [],
+      "abilities": [
+        {
+          "name": "Agilidade em Combate",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Pode usar agilidade em testes de força para ataques, substituindo os multiplicadores das armas."
+        },
+        {
+          "name": "Visão Noturna",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Pode ver a noite, mas não distingue cores"
+        },
+        {
+          "name": "Saúde Reptiliana",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Imune a doenças, frio e fogo."
+        }
+      ],
       "block": {
         "current": 8,
         "armorBonus": "0",
@@ -2023,23 +1222,99 @@
       "id": 5
     },
     {
-      "name": "Limo",
-      "sex": "M",
+      "name": "Bolhuda",
+      "sex": "F",
       "race": "Praga",
-      "class": "Rastejante",
+      "class": "Gigante",
       "level": 1,
-      "life": 40,
-      "currLife": 40,
+      "life": 80,
+      "currLife": 80,
       "mana": 40,
       "currMana": 40,
-      "strength": 4,
+      "strength": 7,
       "agility": 6,
       "intelligence": 0,
       "will": 0,
-      "equipments": [],
-      "abilities": [],
+      "equipments": [
+        {
+          "name": "Tentáculo",
+          "type": "Arma",
+          "description": "Forma um tentáculo com parte do seu corpo",
+          "price": "-",
+          "damage": "For +4",
+          "fn": 0,
+          "effects": "-"
+        },
+        {
+          "name": "Cuspe de limo",
+          "type": "Arma a Distância",
+          "description": "Cospe parte do seu corpo. Causa 5 de dano em si mesmo",
+          "price": "-",
+          "damage": "For +4",
+          "fn": 0,
+          "effects": "-"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Praga Gigante",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Causa +3 de dano nos ataques"
+        },
+        {
+          "name": "Absorver",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Prende um alvo em seu corpo. Ele deverá rolar um teste de força (dif 14) para tentar se soltar. Caso falhe, no próximo turno, estará completamente absorvido, recebendo metade do dano que você sofre e 4 de dano por turno."
+        },
+        {
+          "name": "Regeneração",
+          "type": "Reação",
+          "cost": "Variável",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Gaste mana para recuperar vida. Cada ponto de mana recupera dois pontos de vida"
+        },
+        {
+          "name": "Vulnerabilidade a Fogo",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Recebe o dobro de dano de fogo"
+        },
+        {
+          "name": "Imunidade a Contusão",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Não recebe dano de contusão"
+        },
+        {
+          "name": "Corpo Amórfico",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Imune a danos críticos, morte instantânea ou controle mental. Não possui pontos vitais."
+        },
+        {
+          "name": "Divisão Celular",
+          "type": "Reação",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Caso sua vida seja 0, jogue uma moeda. Se o resultado for cara, você gerará duas pragas normais."
+        }
+      ],
       "block": {
-        "current": 9,
+        "current": 12,
         "armorBonus": "0",
         "blockBonus": 0
       },
@@ -2058,39 +1333,202 @@
       "id": 6
     },
     {
-      "name": "Zubat",
-      "sex": "M",
-      "race": "Morcego-Dragão",
-      "class": "Filhote",
+      "name": "Bolha",
+      "sex": "F",
+      "race": "Praga",
+      "class": "",
       "level": 1,
-      "life": 20,
-      "currLife": 20,
-      "mana": 10,
-      "currMana": 10,
+      "life": 40,
+      "currLife": 40,
+      "mana": 40,
+      "currMana": 40,
       "strength": 4,
       "agility": 6,
-      "intelligence": 1,
-      "will": 2,
-      "equipments": [],
-      "abilities": [],
+      "intelligence": 0,
+      "will": 0,
+      "equipments": [
+        {
+          "name": "Tentáculo",
+          "type": "Arma",
+          "description": "Forma um tentáculo com parte do seu corpo",
+          "price": "-",
+          "damage": "For +4",
+          "fn": 0,
+          "effects": "-"
+        },
+        {
+          "name": "Cuspe de limo",
+          "type": "Arma a Distância",
+          "description": "Cospe parte do seu corpo. Causa 5 de dano em si mesmo",
+          "price": "-",
+          "damage": "For +4",
+          "fn": 0,
+          "effects": "-"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Absorver",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Prende um alvo em seu corpo. Ele deverá rolar um teste de força (dif 14) para tentar se soltar. Caso falhe, no próximo turno, estará completamente absorvido, recebendo metade do dano que você sofre e 4 de dano por turno."
+        },
+        {
+          "name": "Regeneração",
+          "type": "Reação",
+          "cost": "Variável",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Gaste mana para recuperar vida. Cada ponto de mana recupera dois pontos de vida"
+        },
+        {
+          "name": "Vulnerabilidade a Fogo",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Recebe o dobro de dano de fogo"
+        },
+        {
+          "name": "Imunidade a Contusão",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Não recebe dano de contusão"
+        },
+        {
+          "name": "Corpo Amórfico",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Imune a danos críticos, morte instantânea ou controle mental. Não possui pontos vitais."
+        },
+        {
+          "name": "Divisão Celular",
+          "type": "Reação",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Caso sua vida seja 0, jogue uma moeda. Se o resultado for cara, você gerará duas pragas mini."
+        }
+      ],
       "block": {
-        "current": 12,
-        "armorBonus": "",
-        "blockBonus": 3
+        "current": 9,
+        "armorBonus": "0",
+        "blockBonus": 0
       },
       "dodge": {
         "current": 11,
-        "armorBonus": "",
+        "armorBonus": "0",
         "dodgeBonus": 0
       },
       "determination": {
-        "current": 10,
-        "armorBonus": "",
+        "current": 8,
+        "armorBonus": "0",
         "determinationBonus": 0
       },
       "openMenu": false,
       "unified": false,
       "id": 7
+    },
+    {
+      "name": "Bolhinha",
+      "sex": "F",
+      "race": "Praga",
+      "class": "Mini",
+      "level": 1,
+      "life": 20,
+      "currLife": 20,
+      "mana": 40,
+      "currMana": 40,
+      "strength": 3,
+      "agility": 6,
+      "intelligence": 0,
+      "will": 0,
+      "equipments": [
+        {
+          "name": "Tentáculo",
+          "type": "Arma",
+          "description": "Forma um tentáculo com parte do seu corpo",
+          "price": "-",
+          "damage": "For +4",
+          "fn": 0,
+          "effects": "-"
+        },
+        {
+          "name": "Cuspe de limo",
+          "type": "Arma a Distância",
+          "description": "Cospe parte do seu corpo. Causa 5 de dano em si mesmo",
+          "price": "-",
+          "damage": "For +4",
+          "fn": 0,
+          "effects": "-"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Absorver",
+          "type": "Ação",
+          "cost": "10",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Prende um alvo em seu corpo. Ele deverá rolar um teste de força (dif 14) para tentar se soltar. Caso falhe, no próximo turno, estará completamente absorvido, recebendo metade do dano que você sofre e 4 de dano por turno."
+        },
+        {
+          "name": "Regeneração",
+          "type": "Reação",
+          "cost": "Variável",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Gaste mana para recuperar vida. Cada ponto de mana recupera dois pontos de vida"
+        },
+        {
+          "name": "Vulnerabilidade a Fogo",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Recebe o dobro de dano de fogo"
+        },
+        {
+          "name": "Imunidade a Contusão",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Não recebe dano de contusão"
+        },
+        {
+          "name": "Corpo Amórfico",
+          "type": "Suporte",
+          "cost": "-",
+          "requisites": "-",
+          "diff": 0,
+          "description": "Imune a danos críticos, morte instantânea ou controle mental. Não possui pontos vitais."
+        }
+      ],
+      "block": {
+        "current": 8,
+        "armorBonus": "0",
+        "blockBonus": 0
+      },
+      "dodge": {
+        "current": 11,
+        "armorBonus": "0",
+        "dodgeBonus": 0
+      },
+      "determination": {
+        "current": 8,
+        "armorBonus": "0",
+        "determinationBonus": 0
+      },
+      "openMenu": false,
+      "unified": false,
+      "id": 8
     }
   ]
 }
