@@ -136,7 +136,7 @@
 - **FN:** 4
 - **Tipo:** Corte e Perfuração
 - **Distância:** Corpo a Corpo e à Distância
-- **Efeitos:** Se você for versado em magias, gaste 10 de mana (dif 18 - For). Você corta o ar com sua espada, congelando seus inimigos por 1 turno e dando 10 de dano em cada um deles.
+- **Efeitos:** Gaste 10 de mana (dif 18 - For). Você corta o ar com sua espada, congelando seus inimigos por 1 turno e dando 10 de dano em cada um deles.
 
 ### Maça Espinhosa
 
