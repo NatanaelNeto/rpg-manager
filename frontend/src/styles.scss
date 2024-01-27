@@ -15,23 +15,23 @@
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: none;
   scrollbar-color: #000000 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 10px;
+  overflow: hidden;
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #ffffffff;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 0px;
-  border: 0px solid #ffffff;
+  border: 0px solid #000000;
 }
 
 :root {
